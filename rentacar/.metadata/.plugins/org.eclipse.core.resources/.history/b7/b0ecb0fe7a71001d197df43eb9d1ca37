@@ -1,0 +1,6 @@
+package com.kodlamaio.rentalService.configurations.kafka;
+
+public class KafkaTopicConfiguration {
+
+	private String a;
+}

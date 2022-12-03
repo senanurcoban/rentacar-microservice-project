@@ -1,0 +1,5 @@
+package com.kodlamaio.InventoryService.entities;
+
+public class Car {
+
+}

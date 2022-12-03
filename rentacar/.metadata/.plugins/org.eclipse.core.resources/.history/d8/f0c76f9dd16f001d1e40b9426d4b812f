@@ -1,0 +1,5 @@
+package com.kodlamaio.InventoryService.dataAccess;
+
+public interface BrandRepository {
+
+}

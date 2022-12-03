@@ -1,0 +1,13 @@
+package com.kodlamaio.InventoryService.business.concretes;
+
+import com.kodlamaio.InventoryService.business.abstracts.CarService;
+
+public class CarManager implements CarService{
+
+	
+		
+	
+	
+
+
+}

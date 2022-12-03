@@ -1,0 +1,6 @@
+package com.kodlamaio.rentalService.business.responses;
+
+public class UpdateRentalResponse {
+
+	
+}

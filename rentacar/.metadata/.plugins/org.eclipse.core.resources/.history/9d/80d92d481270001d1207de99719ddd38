@@ -1,0 +1,6 @@
+package com.kodlamaio.InventoryService.business.responses.delete;
+
+public class DeleteModelResponses {
+	private int id;
+
+}

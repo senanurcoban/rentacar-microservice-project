@@ -1,0 +1,8 @@
+package com.kodlamaio.InventoryService.business.requests.delete;
+
+
+
+public class DeleteBrandRequest {
+
+	
+}

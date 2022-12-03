@@ -1,0 +1,5 @@
+package com.kodlamaio.InventoryService.configurations.kafka;
+
+public class KafkaTopicConfiguration {
+
+}

@@ -1,0 +1,29 @@
+package com.kodlamaio.rentalService.business.concretes;
+
+import java.util.List;
+
+import com.kodlamaio.common.utilities.mapping.ModelMapperService;
+import com.kodlamaio.rentalService.business.abstracts.RentalService;
+import com.kodlamaio.rentalService.business.requests.CreateRentalRequest;
+import com.kodlamaio.rentalService.business.responses.CreateRentalResponse;
+import com.kodlamaio.rentalService.business.responses.GetAllRentalsResponse;
+import com.kodlamaio.rentalService.dataAccess.RentalRepository;
+
+public class RentalManager implements RentalService {
+
+	private RentalRepository rentalRepository;
+	private ModelMapperService modelMapperService;
+	
+	@Override
+	public List<GetAllRentalsResponse> getAll() {
+		List<Rental> rentals=this.rentalRepository.findAll();
+		return null;
+	}
+
+	@Override
+	public CreateRentalResponse add(CreateRentalRequest createRentalRequest) {
+		
+		return null;
+	}
+
+}

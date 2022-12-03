@@ -1,0 +1,7 @@
+package com.kodlamaio.common.utilities.mapping;
+
+public class ModelMapperManager implements ModelMapperService{
+
+	private ModelMapper modelMapper;
+	
+}

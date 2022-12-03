@@ -1,0 +1,5 @@
+package com.kodlamaio.InventoryService.business.abstracts;
+
+public interface CarService {
+
+}

@@ -1,0 +1,18 @@
+package com.kodlamaio.InventoryService.api;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kodlamaio.InventoryService.business.abstracts.CarService;
+
+import lombok.AllArgsConstructor;
+
+@RestController
+@AllArgsConstructor
+@RequestMapping("/api/cars")
+public class CarsController {
+	
+	private CarService carService;
+	
+
+}

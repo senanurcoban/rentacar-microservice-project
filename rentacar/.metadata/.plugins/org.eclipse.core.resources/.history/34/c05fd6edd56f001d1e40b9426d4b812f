@@ -1,0 +1,9 @@
+package com.kodlamaio.InventoryService.business.concretes;
+
+import org.springframework.ui.Model;
+
+import com.kodlamaio.InventoryService.business.abstracts.ModelService;
+
+public class ModelManager implements ModelService {
+
+}

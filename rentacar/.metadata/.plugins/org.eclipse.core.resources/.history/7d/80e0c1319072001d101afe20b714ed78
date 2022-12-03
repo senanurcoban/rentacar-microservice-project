@@ -1,0 +1,27 @@
+package com.kodlamaio.paymentservice.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+import com.kodlamaio.common.utilities.mapping.ModelMapperService;
+import com.kodlamaio.paymentservice.business.abstracts.PaymentService;
+import com.kodlamaio.paymentservice.business.requests.CreatePaymentRequest;
+import com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse;
+import com.kodlamaio.paymentservice.dataAccess.PaymentRepository;
+
+import lombok.AllArgsConstructor;
+@Service
+@AllArgsConstructor
+public class PaymentManager implements PaymentService{
+
+	private PaymentRepository paymentRepository;
+	private ModelMapperService modelMapperService;
+	
+	
+	@Override
+	public CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest) {
+	
+		return null;
+	}
+	
+	
+}

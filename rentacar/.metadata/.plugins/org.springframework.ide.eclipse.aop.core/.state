@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="apigateway"/>
+<aop-project name="common"/>
+<aop-project name="discovery-server"/>
+<aop-project name="inventoryService"/>
+<aop-project name="rentalService"/>
+<aop-project name="paymentService"/>
+</aop-reference-model>

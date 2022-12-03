@@ -1,0 +1,10 @@
+package com.kodlamaio.rentalService.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(value="carclient",url="http://localhost:9011/stock/api/cars")
+public interface CarClient {
+
+
+	
+}

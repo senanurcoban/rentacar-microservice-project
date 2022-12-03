@@ -1,0 +1,5 @@
+package com.kodlamaio.InventoryService.api;
+
+public class ModelsController {
+
+}

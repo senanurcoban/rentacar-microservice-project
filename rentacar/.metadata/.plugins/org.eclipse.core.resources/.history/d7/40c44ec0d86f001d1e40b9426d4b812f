@@ -1,0 +1,21 @@
+package com.kodlamaio.common.utilities.mapping;
+
+import org.modelmapper.ModelMapper;
+
+public class ModelMapperManager implements ModelMapperService{
+
+	private ModelMapper modelMapper;
+
+	@Override
+	public ModelMapper forResponse() {
+		
+		return null;
+	}
+
+	@Override
+	public ModelMapper forRequest() {
+		
+		return null;
+	}
+	
+}

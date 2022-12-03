@@ -1,0 +1,26 @@
+package com.kodlamaio.InventoryService.business.concretes;
+
+import java.util.List;
+
+import org.springframework.ui.Model;
+
+import com.kodlamaio.InventoryService.business.abstracts.ModelService;
+import com.kodlamaio.InventoryService.business.requests.create.CreateModelRequest;
+import com.kodlamaio.InventoryService.business.responses.create.CreateModelResponse;
+import com.kodlamaio.InventoryService.business.responses.get.GetAllModelsResponse;
+
+public class ModelManager implements ModelService {
+
+	@Override
+	public List<GetAllModelsResponse> getAll() {
+		
+		return null;
+	}
+
+	@Override
+	public CreateModelResponse add(CreateModelRequest createModelRequest) {
+		
+		return null;
+	}
+
+}

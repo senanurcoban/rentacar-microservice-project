@@ -1,0 +1,7 @@
+package com.kodlamaio.InventoryService.business.concretes;
+
+import com.kodlamaio.InventoryService.dataAccess.CarRepository;
+
+public class CarManager implements CarRepository{
+
+}

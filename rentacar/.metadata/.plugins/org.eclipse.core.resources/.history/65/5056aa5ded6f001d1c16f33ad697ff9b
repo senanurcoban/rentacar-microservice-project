@@ -1,0 +1,5 @@
+package com.kodlamaio.InventoryService.business.responses.update;
+
+public class UpdateCarResponse {
+
+}
