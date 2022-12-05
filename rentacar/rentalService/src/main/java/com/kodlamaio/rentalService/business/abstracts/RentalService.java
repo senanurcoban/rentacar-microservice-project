@@ -17,5 +17,6 @@ public interface RentalService {
 	UpdateRentalResponse update(UpdateRentalRequest updateRentalRequest);
 	void delete(String id);
 	GetRentalResponse getById(String id);
+	void setConditionByPayment(String id);
 	
 }

@@ -5,7 +5,420 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-12-01T09:00:00Z</updated>
+  <updated>2022-12-05T15:25:14Z</updated>
+  <entry>
+    <title>Spring Shell 2.1.4 and 3.0.0-M3 are now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/05/spring-shell-2-1-4-and-3-0-0-m3-are-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2022-12-05:5028</id>
+    <updated>2022-12-05T15:25:14Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Shell &lt;code&gt;2.1.4&lt;/code&gt; and &lt;code&gt;3.0.0-M3&lt;/code&gt; has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;https://repo.spring.io/release&lt;/a&gt;, Maven Central and &lt;a href="https://repo.spring.io/milestone"&gt;https://repo.spring.io/milestone&lt;/a&gt; respectively.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;3.0.0-M3&lt;/code&gt; is first milestone which builds on Spring Boot 3.0.0 GA version.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-shell/releases/tag/v2.1.4"&gt;release notes 2.1.4&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-shell/releases/tag/v3.0.0-M3"&gt;release notes 3.0.0-M3&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-shell/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-shell/docs/2.1.4/site/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring WS Samples upgraded for Spring Boot 3.0!</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/02/spring-ws-samples-upgraded-for-spring-boot-3-0" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg L. Turnquist</name>
+    </author>
+    <id>tag:spring.io,2022-12-02:5026</id>
+    <updated>2022-12-02T23:26:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;With the recent &lt;a href="https://spring.io/blog/2022/11/24/spring-boot-3-0-goes-ga"&gt;announcement of Spring Boot 3.0 going GA&lt;/a&gt;, some of you may be interested in upgrading your Spring Web Services-based applications to take full advantage of this. The Spring WS team has upgraded our set of sample apps to help you carry that out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/spring-projects/spring-ws-samples"&gt;main branch&lt;/a&gt; now tracks the version of samples with all these updates. (The prior version of samples built on Spring Boot 2.7 are now on that repository&amp;#8217;s &lt;code&gt;1.0.x&lt;/code&gt; branch.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Some of the highlights are covered below.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="a-lot-of-our-tools-have-moved"&gt;&lt;a class="anchor" href="#a-lot-of-our-tools-have-moved"&gt;&lt;/a&gt;A LOT of our tools have moved!&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Back in the olden days, much of our XML processing tools were inside the JDK. But ever since Java 9 and the migrations of Java EE-based packages to the Eclipse Foundation, those tools have since been pulled out of the JDK. On top of that, SOAP-based libraries, heavily leveraging the now Jakarta EE specs, have seen some upgrades.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This means you&amp;#8217;ll be needing to either upgrade your plugins or switch to alternatives. For example, some SOAP apps use Jakarta XML Binding (JAXB). To comply with Jakarta EE 9+, you need JAXB 3.0. One way to access &lt;strong&gt;xjc&lt;/strong&gt;, a popular tool to generate Java POJO classes from XSD files is shown below:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="exampleblock"&gt;
+&lt;div class="title"&gt;Example 1. Using JAXB&amp;#8217;s xjc compiler on XSD files (airline/server/pom.xml)&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;&amp;lt;plugin&amp;gt;
+    &amp;lt;groupId&amp;gt;org.codehaus.mojo&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;jaxb2-maven-plugin&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.1.0&amp;lt;/version&amp;gt;
+    &amp;lt;executions&amp;gt;
+        &amp;lt;execution&amp;gt;
+            &amp;lt;id&amp;gt;xjc&amp;lt;/id&amp;gt;
+            &amp;lt;goals&amp;gt;
+                &amp;lt;goal&amp;gt;xjc&amp;lt;/goal&amp;gt;
+            &amp;lt;/goals&amp;gt;
+        &amp;lt;/execution&amp;gt;
+    &amp;lt;/executions&amp;gt;
+    &amp;lt;configuration&amp;gt;
+        &amp;lt;sources&amp;gt;${project.basedir}/src/main/resources/messages.xsd&amp;lt;/sources&amp;gt;
+        &amp;lt;packageName&amp;gt;org.springframework.ws.samples.airline.schema&amp;lt;/packageName&amp;gt;
+        &amp;lt;target&amp;gt;3.0&amp;lt;/target&amp;gt;
+    &amp;lt;/configuration&amp;gt;
+&amp;lt;/plugin&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock note"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+This isn&amp;#8217;t meant to be an extensive listing of all the settings, but instead one example of how to use it. Please visit the plugin&amp;#8217;s ref docs for more details.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There are several tools that will compile a WSDL into Java classes, one being Jakarta XML Web Services (JAX-WS).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="exampleblock"&gt;
+&lt;div class="title"&gt;Example 2. Using JAX-WS&amp;#8217;s wsimport tool to compile a WSDL (airline/client/jax-ws/pom.xml)&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;&amp;lt;plugin&amp;gt;
+    &amp;lt;groupId&amp;gt;com.sun.xml.ws&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;jaxws-maven-plugin&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.0.0&amp;lt;/version&amp;gt;
+    &amp;lt;executions&amp;gt;
+        &amp;lt;execution&amp;gt;
+            &amp;lt;goals&amp;gt;
+                &amp;lt;goal&amp;gt;wsimport&amp;lt;/goal&amp;gt;
+            &amp;lt;/goals&amp;gt;
+        &amp;lt;/execution&amp;gt;
+    &amp;lt;/executions&amp;gt;
+    &amp;lt;configuration&amp;gt;
+        &amp;lt;!-- The name of your generated source package --&amp;gt;
+        &amp;lt;wsdlFiles&amp;gt;${project.basedir}/../airline.wsdl&amp;lt;/wsdlFiles&amp;gt;
+        &amp;lt;packageName&amp;gt;org.springframework.ws.samples.airline.client.jaxws&amp;lt;/packageName&amp;gt;
+        &amp;lt;sourceDestDir&amp;gt;${sourcesDir}&amp;lt;/sourceDestDir&amp;gt;
+        &amp;lt;destDir&amp;gt;${classesDir}&amp;lt;/destDir&amp;gt;
+        &amp;lt;extension&amp;gt;true&amp;lt;/extension&amp;gt;
+    &amp;lt;/configuration&amp;gt;
+&amp;lt;/plugin&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There are actually multiple ways to do this, and if you look at each sample, they each do things a little differently. Pick the one that meets your needs the best.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="logging-soap-traffic"&gt;&lt;a class="anchor" href="#logging-soap-traffic"&gt;&lt;/a&gt;Logging SOAP traffic&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;One of the most vital tools we have is logging. And logging SOAP messages coming and going is critical to debugging configuration and ensuring we are sending what the server is expected. Thanks to Spring Boot, it&amp;#8217;s easier than ever to debug SOAP traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Just add this to your &lt;code&gt;application.properties&lt;/code&gt; file:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="exampleblock"&gt;
+&lt;div class="title"&gt;Example 3. Logging SOAP messages (airline/server/src/main/resources/application.properties)&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;logging.level.org.springframework.ws.client.MessageTracing.sent=DEBUG
+logging.level.org.springframework.ws.server.MessageTracing.sent=DEBUG
+logging.level.org.springframework.ws.client.MessageTracing.received=TRACE
+logging.level.org.springframework.ws.server.MessageTracing.received=TRACE&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="axiom-doesnt-support-jakarta-ee-9"&gt;&lt;a class="anchor" href="#axiom-doesnt-support-jakarta-ee-9"&gt;&lt;/a&gt;Axiom doesn&amp;#8217;t support Jakarta EE 9+&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Web Services 4.0 had to, unfortunately, drop its support for Apache Axiom. It&amp;#8217;s most recently version (1.4) still taps the old version of Java EE Activation, not the Jakarta EE version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The irony is that our Axis1 client (Axis is built on top of Axiom) still works! This is mostly due to that example not using Spring WS but simple Axis APIs to talk to the Airport Server. (Perhaps we don&amp;#8217;t need such a sample?)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The upshot of all this is that SOAP itself as a technology is very solid. The specs and formats of SOAP messages haven&amp;#8217;t really changed. Instead, the libraries that help us compose, transmit, and consume SOAP messages is what&amp;#8217;s changing. And so a legacy library can easily communicate with a new-and-improved SOAP server running the very latest version of Spring WS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="xws-security-doesnt-support-jakarta-ee-9"&gt;&lt;a class="anchor" href="#xws-security-doesnt-support-jakarta-ee-9"&gt;&lt;/a&gt;XWS-Security doesn&amp;#8217;t support Jakarta EE 9+&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;XWS-Security has been a workhorse for years. It is a rock-solid library that allows us to sign, secure, encrypt, decrypt, and validate SOAP messages through the many flavors of security covered in the specs. It&amp;#8217;s very easy to dial in exactly what you need with XWS-Security on both clients and servers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The problem is, XWS-Security hasn&amp;#8217;t had an update since 2008. That means, no support for Jakarta EE 9-based APIs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Thankfully, we have the Apache WSS4J project, which as recently as October of this year, put out a release that supports Jakarta EE 9.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The samples have been upgraded showing how to use Spring WS&amp;#8217;s Wss4jSecurityInterceptor in both client-based and server-based messaging.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="more-spring-boot-overall"&gt;&lt;a class="anchor" href="#more-spring-boot-overall"&gt;&lt;/a&gt;More Spring Boot overall&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You may not realize it, but these examples were first created long ago, back in 2013 by Spring WS&amp;#8217;s original creator, Arjen Poutsma. And they predate a LOT of stuff including Spring Boot. They were first written without any usage of Spring Data and they also began with Spring&amp;#8217;s legacy XML format while using Spring WS 2.1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I have strived to upgrade these samples to use the more modern convention of Java-based configuration, switching to Spring Boot autoconfigured services when possible, and also migrating toward a full-on usage of Spring Data JPA where it made sense. And I will continue to upgrade these samples as needed to better leverage them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you spot issues or possible improvements, feel free to &lt;a href="https://github.com/spring-projects/spring-ws-samples/pulls"&gt;submit a pull request&lt;/a&gt;. Contributions welcome!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="summary"&gt;&lt;a class="anchor" href="#summary"&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I know that configuring SOAP-based services with Java can be incredibly brittle. Examples are one of the most useful things we as software developers need.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;But hopefully, by updating these samples to work with Spring Boot 3.0, Jakarta EE 9+, Java 17, and Spring Framework 6.0, you&amp;#8217;ll have a good place to go if you need help assembling your next (or current!) SOAP-based application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;--Greg
+Project Lead for Spring Web Services&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud 2022.0.0 Release Candidate 3 (codename Kilburn) Has Been Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/02/spring-cloud-2022-0-0-release-candidate-3-codename-kilburn-has-been-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Olga Maciaszek-Sharma</name>
+    </author>
+    <id>tag:spring.io,2022-12-02:5025</id>
+    <updated>2022-12-02T14:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that the Release Candidate 3 (RC3) of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud 2022.0&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href="https://repo.spring.io/milestone/"&gt;Spring Milestone&lt;/a&gt; repository. You can check out the 2022.0 &lt;a href="https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2022.0-Release-Notes"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes-in-the-2022-0-0-rc3-release" class="anchor" name="notable-changes-in-the-2022-0-0-rc3-release"&gt;&lt;/a&gt;Notable Changes in the 2022.0.0 RC3 release&lt;/h2&gt;
+&lt;p&gt;Click &lt;a href="https://github.com/orgs/spring-cloud/projects/89/"&gt;here&lt;/a&gt; to see all issues in this release.&lt;/p&gt;
+&lt;p&gt;Spring Cloud 2022.0.0-RC3 requires Spring Boot 3.0.0.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-contract" class="anchor" name="spring-cloud-contract"&gt;&lt;/a&gt;Spring Cloud Contract&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Removes Gradle&amp;rsquo;s support for &lt;code&gt;src/test/resources/contracts&lt;/code&gt; checking (&lt;a href="https://github.com/spring-cloud/spring-cloud-contract/issues/1848"&gt;#1848&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check the &lt;a href="https://github.com/spring-cloud/spring-cloud-contract/wiki/Spring-Cloud-Contract-4.0-Migration-Guide#spring-cloud-contract-400-rc3"&gt;latest migration guide entry&lt;/a&gt; for more information.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-gateway" class="anchor" name="spring-cloud-gateway"&gt;&lt;/a&gt;Spring Cloud Gateway&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added the possibility to disable global CORS configuration (&lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/pull/2779"&gt;#2779&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-openfeign" class="anchor" name="spring-cloud-openfeign"&gt;&lt;/a&gt;Spring Cloud OpenFeign&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for AOT and native images has been added (&lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/pull/794"&gt;#794&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Support for Micrometer Observation API has been added ([#793]&lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/pull/793)"&gt;https://github.com/spring-cloud/spring-cloud-openfeign/pull/793)&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Feign has been upgraded to Feign &lt;code&gt;12.1&lt;/code&gt; (&lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/pull/792"&gt;#792&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-commons" class="anchor" name="spring-cloud-commons"&gt;&lt;/a&gt;Spring Cloud Commons&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Switched to lazily initializing child contexts in AOT mode (&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/pull/1176"&gt;#1176&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-kubernetes" class="anchor" name="spring-cloud-kubernetes"&gt;&lt;/a&gt;Spring Cloud Kubernetes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Filter service discovery by namespace ((#1000)[https://github.com/spring-cloud/spring-cloud-kubernetes/issues/1000])&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-config" class="anchor" name="spring-cloud-config"&gt;&lt;/a&gt;Spring Cloud Config&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Vault upgraded to 3.0.0 (&lt;a href="https://github.com/spring-cloud/spring-cloud-config/issues/2193"&gt;2193&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-vault" class="anchor" name="spring-cloud-vault"&gt;&lt;/a&gt;Spring Cloud Vault&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Vault upgraded to 3.0.0 (&lt;a href="https://github.com/spring-cloud/spring-cloud-vault/issues/665"&gt;665&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-stream" class="anchor" name="spring-cloud-stream"&gt;&lt;/a&gt;Spring Cloud Stream&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+  &lt;p&gt;The test binder in Spring Cloud Stream moved to a separate artifact from the core Spring Cloud Stream module. Before this release, the test binder was part of the core module, and users used it using the &lt;code&gt;test-binder&lt;/code&gt; classifier, which was inconvenient. With this release, the test binder is now moved and available through &lt;code&gt;spring-cloud-stream-test-binder&lt;/code&gt; module. You can add it as a dependency in your application and get all the previous test binder components.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Improved error handling docs in core Spring Cloud Stream&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Spring Cloud Stream Schema Registry AVRO-based converters are updated to AVRO &lt;code&gt;1.11.1&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Starting from this release, the AWS Kinesis binder is no longer part of the Spring Cloud Stream release train and will be released separately. &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following modules were updated as part of 2022.0.0-RC3:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Module &lt;/th&gt;
+      &lt;th&gt;Version &lt;/th&gt;
+      &lt;th&gt;Issues&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Task &lt;/td&gt;
+      &lt;td&gt;3.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-task/milestone/68?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Bus &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Contract &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-contract/milestone/97?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Circuitbreaker &lt;/td&gt;
+      &lt;td&gt;3.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Function &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud OpenFeign &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/milestone/58?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Zookeeper &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Commons &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/milestone/108?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Vault &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-vault/milestone/54?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Kubernetes &lt;/td&gt;
+      &lt;td&gt;3.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-kubernetes/milestone/54?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Stream &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Starter Build &lt;/td&gt;
+      &lt;td&gt;2022.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Consul &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Config &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-config/milestone/111?closed=1"&gt;issues&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Build &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Gateway &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/milestone/73?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Netflix &lt;/td&gt;
+      &lt;td&gt;4.0.0-RC3 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloud"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;repositories&amp;gt;&#xD;
+  &amp;lt;repository&amp;gt;&#xD;
+    &amp;lt;id&amp;gt;spring-milestones&amp;lt;/id&amp;gt;&#xD;
+    &amp;lt;name&amp;gt;Spring Milestones&amp;lt;/name&amp;gt;&#xD;
+    &amp;lt;url&amp;gt;https://repo.spring.io/milestone&amp;lt;/url&amp;gt;&#xD;
+    &amp;lt;snapshots&amp;gt;&#xD;
+      &amp;lt;enabled&amp;gt;false&amp;lt;/enabled&amp;gt;&#xD;
+    &amp;lt;/snapshots&amp;gt;&#xD;
+  &amp;lt;/repository&amp;gt;&#xD;
+&amp;lt;/repositories&amp;gt;&#xD;
+&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;2022.0.0-RC3&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;&#xD;
+&amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-netflix-eureka-client&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;plugins {&#xD;
+  id &amp;#39;java&amp;#39;&#xD;
+  id &amp;#39;org.springframework.boot&amp;#39; version &amp;#39;3.0.0&amp;#39;&#xD;
+  id &amp;#39;io.spring.dependency-management&amp;#39; version &amp;#39;1.1.0&amp;#39;&#xD;
+}&#xD;
+&#xD;
+repositories {&#xD;
+  mavenCentral()&#xD;
+  maven { url &amp;#39;https://repo.spring.io/milestone&amp;#39; }&#xD;
+}&#xD;
+&#xD;
+ext {&#xD;
+  set(&amp;#39;springCloudVersion&amp;#39;, &amp;quot;2022.0.0-RC3&amp;quot;)&#xD;
+}&#xD;
+&#xD;
+&#xD;
+dependencyManagement {&#xD;
+  imports {&#xD;
+    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}&amp;quot;&#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+dependencies {&#xD;
+  implementation &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
+  implementation &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&amp;#39;&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Java Champion Gunnar Morling about messaging middleware, Debezium, change data capture, and more.</title>
     <link rel="alternate" href="https://spring.io/blog/2022/12/01/a-bootiful-podcast-java-champion-gunnar-morling-about-messaging-middleware-debezium-change-data-capture-and-more" />
@@ -684,211 +1097,6 @@ class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; | &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Web Services 4.0.0 is now GA</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/21/spring-web-services-4-0-0-is-now-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Greg L. Turnquist</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5008</id>
-    <updated>2022-11-22T06:50:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Greetings Spring community,&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The Spring Web Services team has released &lt;strong&gt;4.0.0&lt;/strong&gt; for general availability. This is the version of Spring WS you&amp;#8217;ll need if you are building SOAP-based applications with &lt;strong&gt;Spring Boot 3.0&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;strong&gt;4.0.x&lt;/strong&gt; is the generation of Spring Web Services that works with Jakarta EE 9+, the version where the enterprise specs (JAX-WS, etc.) migrate from &lt;code&gt;javax.&lt;/code&gt; to &lt;code&gt;jakarta.&lt;/code&gt; package prefixes. Check out &lt;a href="https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga"&gt;Juergen Holler&amp;#8217;s blog post&lt;/a&gt; for more details about Spring Framework 6.0.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Being based upon Spring Framework 6.0, this is also the generation of Spring Web Services that is rebased on top of Java 17 (LTS). So check it out!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For more details, check out our official &lt;a href="https://github.com/spring-projects/spring-ws/releases/tag/v4.0.0"&gt;GitHub release&lt;/a&gt;. This includes links to all the related tickets as well as the source code.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We have also adopted &lt;a href="https://github.com/spring-projects/spring-ws/releases"&gt;GitHub releases&lt;/a&gt; as our avenue for tracking changes in a given release. All current and prior releases of Spring WS are now captured in the list of releases on GitHub. Feel free to check them out.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The artifacts are hosted on Maven Central so grab 'em while they&amp;#8217;re hot!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-ws/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-ws"&gt;Source Code&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-ws/issues"&gt;Issues&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.8 and 6.0 are now GA</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/21/spring-security-5-8-and-6-0-are-now-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Steve Riesenberg</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5005</id>
-    <updated>2022-11-21T18:58:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, we are very excited to announce the general availability of Spring Security 6.0! In addition, we are pleased to announce the general availability of Spring Security 5.8, which is provided to simplify &lt;a href="https://docs.spring.io/spring-security/reference/5.8/migration/index.html"&gt;upgrading to 6.0&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Security 6 requires JDK 17 and uses the &lt;code&gt;jakarta&lt;/code&gt; namespace. Among its many features, upgrading to Spring Security 6 will bring you:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Improved session management&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Improved AOT processing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Security metrics and traces&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Several defense-in-depth enhancements&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A simplified authorization framework&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Check out &lt;a href="https://docs.spring.io/spring-security/reference/5.8/whats-new.html"&gt;What&amp;#8217;s New in Spring Security 5.8&lt;/a&gt; and &lt;a href="https://docs.spring.io/spring-security/reference/6.0/whats-new.html"&gt;What&amp;#8217;s New in Spring Security 6.0&lt;/a&gt; for a comprehensive list of new features.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can also see the release notes for &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0-M1"&gt;5.8.0-M1&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0-M2"&gt;5.8.0-M2&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0-M3"&gt;5.8.0-M3&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0-RC1"&gt;5.8.0-RC1&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0"&gt;5.8.0&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M1"&gt;6.0.0-M1&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M2"&gt;6.0.0-M2&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M3"&gt;6.0.0-M3&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M4"&gt;6.0.0-M4&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M5"&gt;6.0.0-M5&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M6"&gt;6.0.0-M6&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M7"&gt;6.0.0-M7&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-RC1"&gt;6.0.0-RC1&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-RC2"&gt;6.0.0-RC2&lt;/a&gt;, and &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0"&gt;6.0.0&lt;/a&gt; for an in-depth view.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="breaking-changes"&gt;&lt;a class="anchor" href="#breaking-changes"&gt;&lt;/a&gt;Breaking Changes&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Being a major release, 6.0 also comes with several breaking changes, like &lt;a href="https://github.com/spring-projects/spring-security/issues/10902"&gt;the removal of &lt;code&gt;WebSecurityConfigurerAdapter&lt;/code&gt;&lt;/a&gt;. We understand that taking breaking changes requires extra work for you, and at the same time, we feel that these changes will lower Spring Security&amp;#8217;s learning curve and result in simpler and more secure applications.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To prepare your application for these breaking changes, Spring Security released 5.8 and an accompanying migration guide. It is recommended that you first upgrade to 5.8, following the steps outlined in the &lt;a href="https://docs.spring.io/spring-security/reference/5.8/migration/index.html"&gt;5.8 migration guide&lt;/a&gt; and then the subsequent steps in the &lt;a href="https://docs.spring.io/spring-security/reference/6.0/migration/index.html"&gt;6.0 migration guide&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="staying-on-5-x-5-8-is-for-you-too"&gt;&lt;a class="anchor" href="#staying-on-5-x-5-8-is-for-you-too"&gt;&lt;/a&gt;Staying on 5.x? 5.8 is for you, too.&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you will be staying on the 5.x line for a time, it is still recommended that you update to 5.8.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0"&gt;5.8 release&lt;/a&gt; by itself brings numerous enhancements, such as session handling improvements, expanded support for the &lt;code&gt;AuthorizationManager&lt;/code&gt; API, and additional defense in-depth with support for CSRF BREACH.  Check out &lt;a href="https://docs.spring.io/spring-security/reference/5.8/whats-new.html"&gt;What’s New in Spring Security 5.8&lt;/a&gt; for a list of new features available in the release.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="support"&gt;&lt;a class="anchor" href="#support"&gt;&lt;/a&gt;Support&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As always, we look forward to hearing your &lt;a href="https://github.com/spring-projects/spring-security/issues"&gt;feedback on GitHub&lt;/a&gt; and your &lt;a href="https://stackoverflow.com"&gt;questions on StackOverflow&lt;/a&gt;!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-security/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-security"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-security/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-security/reference/index.html"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>New Major Releases of Spring for Apache Kafka and Spring for RabbitMQ</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/21/new-major-releases-of-spring-for-apache-kafka-and-spring-for-rabbitmq" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Gary Russell</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5004</id>
-    <updated>2022-11-21T18:12:01Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I am pleased to announce that new major releases (3.0.0) for Spring for Apache Kafka and Spring for RabbitMQ are now available.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="common-changes"&gt;&lt;a class="anchor" href="#common-changes"&gt;&lt;/a&gt;Common Changes&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The 3.0.x versions of these projects have the following common changes&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;they depend on Java version 17 or later&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;they depend on Spring Framework 6.0.x&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;support for creating native GraalVM applications&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;support for micrometer observability and tracing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bill of Materials POMs are now provided to help with dependency management&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-for-apache-kafka"&gt;&lt;a class="anchor" href="#spring-for-apache-kafka"&gt;&lt;/a&gt;Spring for Apache Kafka&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;support for a global single &lt;code&gt;EmbeddedKafkaBroker&lt;/code&gt; (across multiple test classes)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;several enhancements for &lt;code&gt;@RetryableTopic&lt;/code&gt; (non-blocking retries)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;KafkaTemplate&lt;/code&gt; methods now return &lt;code&gt;CompleteableFuture&lt;/code&gt; instead of &lt;code&gt;ListenableFuture&lt;/code&gt;, which has been deprecated&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For information about all changes in this release, see &lt;a href="https://docs.spring.io/spring-kafka/docs/3.0.0/reference/html/#whats-new-part"&gt;What&amp;#8217;s New&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In addition, &lt;code&gt;2.9.3&lt;/code&gt; and &lt;code&gt;2.8.11&lt;/code&gt; maintenance releases are now available.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-kafka/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-kafka/docs/3.0.0/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-kafka"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-for-rabbitmq"&gt;&lt;a class="anchor" href="#spring-for-rabbitmq"&gt;&lt;/a&gt;Spring for RabbitMQ&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;support for RabbitMQ super streams, with single active consumers, has been added&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the previously deprecated remoting support has been removed&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the &lt;code&gt;AsyncRabbitTemplate&lt;/code&gt; and &lt;code&gt;RabbitStreamTemplate&lt;/code&gt; methods now return &lt;code&gt;CompleteableFuture&lt;/code&gt; instead of &lt;code&gt;ListenableFuture&lt;/code&gt;, which has been deprecated&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For information about all changes in this release, see  &lt;a href="https://docs.spring.io/spring-amqp/docs/3.0.0/reference/html/#whats-new"&gt;What&amp;#8217;s New&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In addition, the &lt;code&gt;2.4.8&lt;/code&gt; maintenance release is now available.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-amqp/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-amqp"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-amqp/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-amqp/docs/3.0.0/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-amqp"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>

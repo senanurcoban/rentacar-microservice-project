@@ -117,4 +117,14 @@ public class RentalManager implements RentalService {
             throw new BusinessException("Rental not found");
         }
 	}
+
+	@Override
+	public void setConditionByPayment(String id) {
+		Rental rental = this.rentalRepository.findById(id).get();
+		if (rental.getCondition()==1) {
+			rental.setCondition(2);	
+		}
+		rentalRepository.save(rental);
+		
+	}
 }

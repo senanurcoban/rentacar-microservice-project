@@ -1,18 +1,18 @@
 package com.kodlamaio.paymentservice.business.concretes;
 
-import java.util.List;
+import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
+import com.kodlamaio.common.events.PaymentCreatedEvent;
+import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
+import com.kodlamaio.paymentservice.api.RentalApi;
 import com.kodlamaio.paymentservice.business.abstracts.PaymentService;
 import com.kodlamaio.paymentservice.business.requests.CreatePaymentRequest;
-import com.kodlamaio.paymentservice.business.requests.UpdatePaymentRequest;
 import com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse;
-import com.kodlamaio.paymentservice.business.responses.GetAllPaymentsResponse;
-import com.kodlamaio.paymentservice.business.responses.GetPaymentResponse;
-import com.kodlamaio.paymentservice.business.responses.UpdatePaymentResponse;
 import com.kodlamaio.paymentservice.dataAccess.PaymentRepository;
+import com.kodlamaio.paymentservice.entities.Payment;
 
 import lombok.AllArgsConstructor;
 @Service
@@ -21,48 +21,44 @@ public class PaymentManager implements PaymentService{
 
 	private PaymentRepository paymentRepository;
 	private ModelMapperService modelMapperService;
+	private RentalApi rentalApi;
 	
 	
-	@Override
+  	@Override
 	public CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest) {
+        checkBalanceEnough(createPaymentRequest.getBalance(),createPaymentRequest.getRentalId());
+		
+		Payment payment = modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
+		payment.setId(UUID.randomUUID().toString());
+		
+		Payment createdPayment = paymentRepository.save(payment);
+		
+		PaymentCreatedEvent paymentCreatedEvent = new PaymentCreatedEvent();
+		paymentCreatedEvent.setRentalId(createdPayment.getRentalId());
+		paymentCreatedEvent.setMessage("Payment Created");
+		
+		CreatePaymentResponse createPaymentResponse = modelMapperService.forResponse().map(payment, CreatePaymentResponse.class);
+		
+		return createPaymentResponse;
+		
+	}
+	private void checkBalanceEnough(double balance, String rentalId) {
+		if (balance<rentalApi.getTotalPrice(rentalId)) {
+			throw new BusinessException("BALANCE.IS.NOT.ENOUGH");
+		}
+	}
+
+
 	
-		return null;
-	}
 
 
-	@Override
-	public List<GetAllPaymentsResponse> getAll() {
 	
-		return null;
-	}
 
 
-	@Override
-	public UpdatePaymentResponse update(UpdatePaymentRequest updatePaymentRequest) {
-		
-		return null;
-	}
-
-
-	@Override
-	public void getTotalPrice(String id) {
 	
 		
-	}
-
-
-	@Override
-	public void delete(String id) {
 		
-		
-	}
-
-
-	@Override
-	public GetPaymentResponse getById(String id) {
-		
-		return null;
-	}
+	
 	
 	
 }
