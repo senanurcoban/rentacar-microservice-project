@@ -17,6 +17,6 @@ public class UpdateRentalResponse {
 	private int rentedForDays;
 	private double dailyPrice;
 	private double totalPrice;
-	private int state;
+	
 	
 }

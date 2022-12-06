@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreatePaymentRequest {
 
-private String rentalId;
+    private String rentalId;
 	
 	private String cardNo;
 	

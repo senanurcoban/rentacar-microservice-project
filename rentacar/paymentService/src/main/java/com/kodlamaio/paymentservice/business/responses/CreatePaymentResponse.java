@@ -21,11 +21,11 @@ public class CreatePaymentResponse {
 	
 	private String cardHolder;
 
-	private int cvv;
+	//private int cvv;
 	
-	private LocalDate cardDate;
+	//private LocalDate cardDate;
 
 	private double balance;
 	
-	private int status;
+	//private int status;
 }

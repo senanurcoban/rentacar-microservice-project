@@ -46,6 +46,8 @@ public class Payment {
 	@Column(name="status")
 	private int status;
 	
+	@Column(name = "total_price")
+	private double totalPrice;
 	
 	
 	

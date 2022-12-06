@@ -5,14 +5,15 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 import com.kodlamaio.common.events.PaymentCreatedEvent;
+import com.kodlamaio.common.rentalPayment.PayMoneyRequest;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
 import com.kodlamaio.paymentservice.api.RentalApi;
 import com.kodlamaio.paymentservice.business.abstracts.PaymentService;
-import com.kodlamaio.paymentservice.business.requests.CreatePaymentRequest;
 import com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse;
 import com.kodlamaio.paymentservice.dataAccess.PaymentRepository;
 import com.kodlamaio.paymentservice.entities.Payment;
+import com.kodlamaio.paymentservice.kafka.PaymentProducer;
 
 import lombok.AllArgsConstructor;
 @Service
@@ -22,31 +23,39 @@ public class PaymentManager implements PaymentService{
 	private PaymentRepository paymentRepository;
 	private ModelMapperService modelMapperService;
 	private RentalApi rentalApi;
+	private PaymentProducer paymentProducer;
 	
 	
-  	@Override
-	public CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest) {
-        checkBalanceEnough(createPaymentRequest.getBalance(),createPaymentRequest.getRentalId());
-		
-		Payment payment = modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
+	@Override
+	public CreatePaymentResponse add(PayMoneyRequest createPaymentRequest) {
+		checkBalanceEnough(createPaymentRequest.getBalance(), createPaymentRequest.getTotalPrice());
+		Payment payment = this.modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
 		payment.setId(UUID.randomUUID().toString());
+		payment.setBalance(createPaymentRequest.getBalance());
+		payment.setTotalPrice(createPaymentRequest.getTotalPrice());
 		
-		Payment createdPayment = paymentRepository.save(payment);
+		paymentRepository.save(payment);
+
 		
+//		senkron olması gerektiği için
+//		
 		PaymentCreatedEvent paymentCreatedEvent = new PaymentCreatedEvent();
-		paymentCreatedEvent.setRentalId(createdPayment.getRentalId());
-		paymentCreatedEvent.setMessage("Payment Created");
+		paymentCreatedEvent.setRentalId(createPaymentRequest.getRentalId());
+		paymentCreatedEvent.setMessage("Payment carried out");
+		paymentProducer.sendMessage(paymentCreatedEvent);
 		
-		CreatePaymentResponse createPaymentResponse = modelMapperService.forResponse().map(payment, CreatePaymentResponse.class);
-		
+//		
+		CreatePaymentResponse createPaymentResponse = this.modelMapperService.forResponse().map(payment,
+				CreatePaymentResponse.class);
 		return createPaymentResponse;
-		
 	}
-	private void checkBalanceEnough(double balance, String rentalId) {
-		if (balance<rentalApi.getTotalPrice(rentalId)) {
-			throw new BusinessException("BALANCE.IS.NOT.ENOUGH");
+	
+	private void checkBalanceEnough(double balance, double totalPrice) {
+		if (balance < totalPrice) {
+			throw new BusinessException("Balance is not enough ");
 		}
 	}
+  
 
 
 	

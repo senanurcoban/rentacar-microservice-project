@@ -9,8 +9,10 @@ import org.springframework.stereotype.Service;
 
 import com.kodlamaio.common.events.RentalCreatedEvent;
 import com.kodlamaio.common.events.RentalUpdatedEvent;
+import com.kodlamaio.common.requests.CreatePaymentRequest;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
+import com.kodlamaio.rentalService.api.PaymentApi;
 import com.kodlamaio.rentalService.business.abstracts.RentalService;
 import com.kodlamaio.rentalService.business.requests.CreateRentalRequest;
 import com.kodlamaio.rentalService.business.requests.UpdateRentalRequest;
@@ -32,6 +34,7 @@ public class RentalManager implements RentalService {
 	private ModelMapperService modelMapperService;
 	private RentalProducer rentalProducer;
 	private CarClient carClient;
+	private PaymentApi paymentApi;
 	@Override
 	public List<GetAllRentalsResponse> getAll() {
 		List<Rental> rentals=this.rentalRepository.findAll();
@@ -44,13 +47,15 @@ public class RentalManager implements RentalService {
 	}
 
 	@Override
-	public CreateRentalResponse add(CreateRentalRequest createRentalRequest) {
+	public CreateRentalResponse add(CreateRentalRequest createRentalRequest,CreatePaymentRequest createPaymentRequest) {
 		carClient.checkIfCarAvailable(createRentalRequest.getCarId());
 		Rental rental= this.modelMapperService.forRequest().map(createRentalRequest, Rental.class);
 		rental.setId(UUID.randomUUID().toString());   
 		rental.setDateStarted(LocalDateTime.now());
 		double totalPrice=createRentalRequest.getDailyPrice()*createRentalRequest.getRentedForDays();
 		rental.setTotalPrice(totalPrice);
+		
+		paymentApi.add(createPaymentRequest);
 		
 		Rental rentalCreated=this.rentalRepository.save(rental);
 		RentalCreatedEvent rentalCreatedEvent=new RentalCreatedEvent();
@@ -126,5 +131,9 @@ public class RentalManager implements RentalService {
 		}
 		rentalRepository.save(rental);
 		
+	}
+	@Override
+	public double getTotalPrice(String id) {
+		return rentalRepository.findById(id).get().getTotalPrice();
 	}
 }
