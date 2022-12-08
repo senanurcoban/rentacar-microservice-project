@@ -6,8 +6,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-
-import com.kodlamaio.common.events.InvoiceCreatedEvent;
+import com.kodlamaio.common.events.invoice.InvoiceCreatedEvent;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
 import com.kodlamaio.invoiceservice.business.abstracts.InvoiceService;

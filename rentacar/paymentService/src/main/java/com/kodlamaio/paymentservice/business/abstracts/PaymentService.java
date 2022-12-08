@@ -7,7 +7,8 @@ public interface PaymentService {
 
 	
 	CreatePaymentResponse add(PayMoneyRequest createPaymentRequest);
-	
+	CreatePaymentResponse delete(String id);
+	//CreatePaymentResponse updateStatus(String id, int status);
 	
 }
 

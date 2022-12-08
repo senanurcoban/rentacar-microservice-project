@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.kafka.core.KafkaTemplate"/>
-<fullyQualifiedTypeName name="org.springframework.messaging.Message"/>
-<fullyQualifiedTypeName name="org.springframework.messaging.support.MessageBuilder"/>
-<fullyQualifiedTypeName name="org.springframework.kafka.support.KafkaHeaders"/>
-<fullyQualifiedTypeName name="lombok.Value"/>
 <fullyQualifiedTypeName name="com.kodlamaio.invoiceservice.kafka.InvoiceProducer"/>
 <fullyQualifiedTypeName name="com.kodlamaio.invoiceservice.dataAccess.InvoiceRepository"/>
 <fullyQualifiedTypeName name="com.kodlamaio.invoiceservice.business.abstracts.InvoiceService"/>
@@ -12,11 +7,9 @@
 <fullyQualifiedTypeName name="com.kodlamaio.common.events.InvoiceCreatedEvent"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.client.discovery.EnableDiscoveryClient"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
-<fullyQualifiedTypeName name="com.kodlamaio.common.utilities.mapping.ModelMapperService"/>
 <fullyQualifiedTypeName name="org.modelmapper.ModelMapper"/>
 <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.mapping.ModelMapperManager"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.kodlamaio.invoiceservice.business.response.GetAllInvoicesResponse"/>
 <fullyQualifiedTypeName name="com.kodlamaio.invoiceservice.business.response.GetInvoiceResponse"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
@@ -34,11 +27,7 @@
 <fullyQualifiedTypeName name="org.springframework.kafka.annotation.KafkaListener"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.repository.MongoRepository"/>
 <fullyQualifiedTypeName name="com.kodlamaio.InventoryService.entities.dtos.CarDetailDto"/>
-<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.kafka.PaymentProducer"/>
-<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.entities.Payment"/>
 <fullyQualifiedTypeName name="com.kodlamaio.common.events.PaymentCreatedEvent"/>
-<fullyQualifiedTypeName name="com.kodlamaio.common.utilities.exceptions.BusinessException"/>
-<fullyQualifiedTypeName name="java.util.UUID"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 <fullyQualifiedTypeName name="org.apache.kafka.clients.admin.NewTopic"/>
@@ -54,10 +43,21 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="com.kodlamaio.rentalService.api.PaymentApi"/>
-<fullyQualifiedTypeName name="com.kodlamaio.common.requests.CreatePaymentRequest"/>
 <fullyQualifiedTypeName name="lombok.Data"/>
 <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
 <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
 <fullyQualifiedTypeName name="org.springframework.data.annotation.Id"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Field"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.dataAccess.PaymentRepository"/>
+<fullyQualifiedTypeName name="com.kodlamaio.common.utilities.mapping.ModelMapperService"/>
+<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.kafka.PaymentProducer"/>
+<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.api.RentalApi"/>
+<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.entities.Payment"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="com.kodlamaio.common.events.payment.PaymentCreatedEvent"/>
+<fullyQualifiedTypeName name="com.kodlamaio.common.utilities.exceptions.BusinessException"/>
+<fullyQualifiedTypeName name="com.kodlamaio.common.requests.CreatePaymentRequest"/>
+<fullyQualifiedTypeName name="com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
 </qualifiedTypeNameHistroy>

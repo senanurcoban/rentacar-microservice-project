@@ -4,7 +4,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.kodlamaio.common.events.PaymentCreatedEvent;
+import com.kodlamaio.common.events.payment.PaymentCreatedEvent;
 import com.kodlamaio.common.rentalPayment.PayMoneyRequest;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
@@ -19,42 +19,57 @@ import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
 public class PaymentManager implements PaymentService{
-
+	
 	private PaymentRepository paymentRepository;
 	private ModelMapperService modelMapperService;
-	private RentalApi rentalApi;
 	private PaymentProducer paymentProducer;
-	
-	
+	private RentalApi rentalApi;
 	@Override
 	public CreatePaymentResponse add(PayMoneyRequest createPaymentRequest) {
-		checkBalanceEnough(createPaymentRequest.getBalance(), createPaymentRequest.getTotalPrice());
-		Payment payment = this.modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
+        checkBalanceEnough(createPaymentRequest.getBalance(),createPaymentRequest.getRentalId());
+		
+		Payment payment = modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
 		payment.setId(UUID.randomUUID().toString());
-		payment.setBalance(createPaymentRequest.getBalance());
-		payment.setTotalPrice(createPaymentRequest.getTotalPrice());
 		
-		paymentRepository.save(payment);
+		Payment createdPayment = paymentRepository.save(payment);
+		
+		// senkron olduğu için
 
-		
-//		senkron olması gerektiği için
-//		
 		PaymentCreatedEvent paymentCreatedEvent = new PaymentCreatedEvent();
-		paymentCreatedEvent.setRentalId(createPaymentRequest.getRentalId());
-		paymentCreatedEvent.setMessage("Payment carried out");
-		paymentProducer.sendMessage(paymentCreatedEvent);
+		paymentCreatedEvent.setRentalId(createdPayment.getRentalId());
+		paymentCreatedEvent.setMessage("Payment Created");
 		
-//		
+		this.paymentProducer.sendMessage(paymentCreatedEvent);
+		
 		CreatePaymentResponse createPaymentResponse = this.modelMapperService.forResponse().map(payment,
 				CreatePaymentResponse.class);
 		return createPaymentResponse;
 	}
-	
-	private void checkBalanceEnough(double balance, double totalPrice) {
-		if (balance < totalPrice) {
-			throw new BusinessException("Balance is not enough ");
+
+	@Override
+	public CreatePaymentResponse delete(String id) {
+		paymentRepository.deleteById(id);
+		return null;
+		
+	}
+
+//	@Override
+//	public CreatePaymentResponse updateStatus(String id, int status) {
+//		Payment payment = this.paymentRepository.findById(id).get();
+//		payment.setStatus(status);
+//		paymentRepository.save(payment);
+//		
+//	}
+
+	private void checkBalanceEnough(double balance, String rentalId) {
+		if (balance<rentalApi.getTotalPrice(rentalId)) {
+			throw new BusinessException("BALANCE.IS.NOT.ENOUGH");
 		}
 	}
+	
+	
+	
+
   
 
 

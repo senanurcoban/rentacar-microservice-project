@@ -5,7 +5,122 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-12-05T15:25:14Z</updated>
+  <updated>2022-12-07T17:00:00Z</updated>
+  <entry>
+    <title>Do more with Azure Spring Apps – scale to zero and enhance productivity</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-12-07:5031</id>
+    <updated>2022-12-07T17:00:00Z</updated>
+    <content type="html">&lt;p&gt;In 2020, Spotify coined the term &lt;a href="https://engineering.atspotify.com/2020/08/how-we-use-golden-paths-to-solve-fragmentation-in-our-software-ecosystem/"&gt;&amp;quot;Golden Path”&lt;/a&gt; to refer to a supported approach and set of components to build and deploy software. Having these paths simplifies the development process, lets developers focus on their applications instead of infrastructure and speeds time to production. Microsoft and VMware have partnered to make Azure Spring Apps a golden path for deploying and scaling Spring applications in the cloud. And with new capabilities like the scale to zero and developer productivity enhancements, Azure Spring Apps now offers an even more economical and optimized route to get your Spring applications into production.&lt;/p&gt;&lt;h2&gt;&lt;a href="#1-start-from-zero-and-scale-to-zero-consumption-plan" class="anchor" name="1-start-from-zero-and-scale-to-zero-consumption-plan"&gt;&lt;/a&gt;1. Start from zero and scale to zero – consumption plan&lt;/h2&gt;
+&lt;p&gt;We are introducing a new consumption pricing plan for Azure Spring Apps – you can start from zero and scale to zero vCPU for efficient resource utilization. With this serverless application-centric plan, apps can scale in response to HTTP requests, events, or simply run as always-on background jobs. The consumption plan does not have a base unit. You can scale to zero and pause billing when apps are not in use. You can use this new plan to build or migrate web apps and web API endpoints, event-driven processing apps, microservice apps, and many more. &lt;/p&gt;
+&lt;p&gt;The consumption plan is in private preview. If you would like to try, &lt;a href="https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR9e_wit0rN5LkLw5ybHCSYxUNkxHRDFHMkdNTDNFV1dCWE1CREZKSDRHNi4u"&gt;please sign up&lt;/a&gt; &lt;/p&gt;
+&lt;img src ="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/ASA-Consumption-Plan-2.jpg"/&gt;
+&lt;p&gt;Figure 1 – introduces the Azure Spring Apps consumption plan&lt;/p&gt;&lt;h2&gt;&lt;a href="#2-enhanced-developer-productivity-in-azure-spring-apps-enterprise" class="anchor" name="2-enhanced-developer-productivity-in-azure-spring-apps-enterprise"&gt;&lt;/a&gt;2. Enhanced developer productivity in Azure Spring Apps Enterprise&lt;/h2&gt;&lt;h3&gt;&lt;a href="#2-1-application-accelerators" class="anchor" name="2-1-application-accelerators"&gt;&lt;/a&gt;2.1 Application Accelerators&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/how-to-use-accelerator?tabs=Portal"&gt;Application Accelerators&lt;/a&gt; speed up the process of building and deploying applications. They help you to bootstrap developing your applications and deploy them in a discoverable and repeatable way. Enterprise architects can author and publish accelerator projects that provide developers and app operators in their organization with ready-made, enterprise-conformant code, and configurations. Published accelerators are maintained in Git repositories. The Application Accelerators interface lets you discover available accelerators, configure them, and generate new projects. Application Accelerators (see Figure 2 below) are now available in preview for everyone to use.&lt;/p&gt;
+&lt;img src ="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/application-accelerators.jpg"/&gt;
+&lt;p&gt;Figure 2 – shows Application Accelerators&lt;/p&gt;&lt;h3&gt;&lt;a href="#2-2-application-live-view" class="anchor" name="2-2-application-live-view"&gt;&lt;/a&gt;2.2 Application Live View&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/monitor-apps-by-application-live-view"&gt;Application Live View&lt;/a&gt; is a lightweight insight and troubleshooting tool based on Spring Boot Actuators that helps app developers and app operators look inside running apps. Applications provide information from inside the running processes using HTTP endpoints. Application Live View uses those endpoints to retrieve and interact with the data from applications. &lt;/p&gt;
+&lt;p&gt;You can use Application Live View to inspect application info, health, environment, log levels (see Figure 4 below), JVM statistics (see Figure 3 below), HTTP requests, caches, sessions, scheduled tasks, beans, metrics, and more. Application Live View is now available in preview for everyone to use.&lt;/p&gt;
+&lt;img src ="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/catalog-service-memory-7.jpg"/&gt;
+&lt;p&gt;Figure 3 – Application Live View shows memory usage and GC activities for a Spring app instance&lt;/p&gt;
+&lt;img src ="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/app-live-view-log-levels.jpg"/&gt;
+&lt;p&gt;Figure 4 – Application Live View shows log levels for a Spring app instance&lt;/p&gt;&lt;h3&gt;&lt;a href="#2-3-web-servers-buildpack" class="anchor" name="2-3-web-servers-buildpack"&gt;&lt;/a&gt;2.3 Web Servers Buildpack&lt;/h3&gt;
+&lt;p&gt;You can use the Tanzu Web Servers buildpack to build applications that run web servers like NGINX or Apache HTTP Server. You can use the buildpack for applications that serve static content or build JavaScript source code into production-ready static assets, then automatically configure a web server to serve those assets. Web Servers buildpack support is generally available.&lt;/p&gt;&lt;h2&gt;&lt;a href="#3-spring-framework-6-and-spring-boot-3" class="anchor" name="3-spring-framework-6-and-spring-boot-3"&gt;&lt;/a&gt;3. Spring Framework 6 and Spring Boot 3&lt;/h2&gt;
+&lt;p&gt;In addition to deploying apps built using Spring Boot 2 and Spring Framework 5, you can now deploy and scale apps built using &lt;a href="https://spring.io/blog/2022/11/24/spring-boot-3-0-goes-ga"&gt;Spring Boot 3&lt;/a&gt; and &lt;a href="https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga"&gt;Spring Framework 6&lt;/a&gt;. Spring Boot 3 includes Java 17 baseline, improved observability with Micrometer and Micrometer Tracing, support for Jakarta EE 10, and many more new features. Support for Spring Boot 3 and Spring Framework 6 is now in preview for everyone to use.&lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/SB3-SF6.jpg"/&gt;
+&lt;p&gt;Figure 5 – deploy and scale Spring Boot 3 and Spring Framework 6 apps on Azure&lt;/p&gt;
+&lt;p&gt;Azure Spring Apps will support the latest Spring Boot, Spring Framework, and Spring Cloud major versions starting 30 days after their release. The latest minor versions will be supported as soon as they are released. The Basic and Standard tiers follow the OSSsupported versions and the Enterprise tier carries extended commercial support through VMware Spring Runtime Support entitlements.&lt;/p&gt;&lt;h2&gt;&lt;a href="#4-more-new-features-to-enhance-productivity" class="anchor" name="4-more-new-features-to-enhance-productivity"&gt;&lt;/a&gt;4. More new features to enhance productivity&lt;/h2&gt;&lt;h3&gt;&lt;a href="#4-1-grpc-and-websocket-support" class="anchor" name="4-1-grpc-and-websocket-support"&gt;&lt;/a&gt;4.1 gRPC and WebSocket support&lt;/h3&gt;
+&lt;p&gt;The gRPC is a high-performance remote procedure call (RPC) framework that can run in any environment. It provides bi-directional streaming. gRPC services can be defined using protocol buffers, a powerful binary serialization toolset, and language, and provides tools for generating clients and servers across different languages. Now you can deploy Spring apps with gRPC support in Azure Spring Apps. &lt;/p&gt;
+&lt;p&gt;The WebSocket protocol defines an important capability for web applications: full-duplex, two-way communication between client and server. You can also deploy Spring apps with WebSocket support in Azure Spring Apps.&lt;br/&gt;gRPC and WebSocket support are in preview for everyone to use.&lt;/p&gt;&lt;h3&gt;&lt;a href="#4-2-connect-to-app-instance-shell-environment-for-troubleshooting" class="anchor" name="4-2-connect-to-app-instance-shell-environment-for-troubleshooting"&gt;&lt;/a&gt;4.2 Connect to app instance shell environment for troubleshooting&lt;/h3&gt;
+&lt;p&gt;Azure Spring Apps offers many ways to troubleshoot your applications. For developers who like to inspect an app instance running environment, you can &lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/how-to-connect-to-app-instance-for-troubleshooting?tabs=azure-portal"&gt;connect to the app instance’s shell environment&lt;/a&gt; and troubleshoot it (see Figure 6 below). &lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/connect-to-app-shell-environment-3.jpg"/&gt;
+&lt;p&gt;Figure 6 – show how to connect to an app instance’s shell environment and inspect the environment&lt;/p&gt;&lt;h3&gt;&lt;a href="#4-3-debug-your-apps-remotely-in-azure-spring-apps" class="anchor" name="4-3-debug-your-apps-remotely-in-azure-spring-apps"&gt;&lt;/a&gt;4.3 Debug your apps remotely in Azure Spring Apps&lt;/h3&gt;
+&lt;p&gt;Now, you can &lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/how-to-remote-debugging-app-instance?tabs=portal%2CIntellij-extension"&gt;remotely debug&lt;/a&gt; your apps in Azure Spring Apps using IntelliJ (see Figure 7 below) or VS Code. For security reasons, by default, Azure Spring Apps disables remote debugging. You can enable remote debugging for your apps using Azure Portal or Azure CLI and start debugging. &lt;/p&gt;
+&lt;p&gt;Remote debugging support is generally available.&lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/remote-debug-spring-apps.jpeg"/&gt;
+&lt;p&gt;Figure 7 – shows how to start remote debugging using IntelliJ&lt;/p&gt;&lt;h3&gt;&lt;a href="#4-4-service-stop-start-is-now-generally-available" class="anchor" name="4-4-service-stop-start-is-now-generally-available"&gt;&lt;/a&gt;4.4 Service Stop/Start is now generally available&lt;/h3&gt;
+&lt;p&gt;You can stop and start your Azure Spring Apps service instance to help you save costs. If you were to stop and start your development and test environment Azure Spring Apps service instances to match your work hours, you could save up to 75%*.&lt;/p&gt;
+&lt;span style = "font-size:smaller;"&gt;\* Assuming usage of Azure Spring Apps service instances for 40 hours a week, then you could save up to 75% by stopping those instances during inactive times. (168 hours - 40 hours) / 168 hours = 75%.&lt;/span&gt;&lt;h2&gt;&lt;a href="#5-try-today" class="anchor" name="5-try-today"&gt;&lt;/a&gt;5. Try Today&lt;/h2&gt;
+&lt;p&gt;In 2019, Microsoft and VMware announced Azure Spring Apps, a fully managed service for Spring applications. We set out to solve many of the common challenges enterprise developers face when running Spring applications at scale. Azure Spring Apps is a golden path to production in the cloud and you can get started today – &lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/quickstart?tabs=Azure-CLI&amp;pivots=programming-language-java"&gt;deploy&lt;/a&gt; your first Spring app to Azure! &lt;/p&gt;
+&lt;p&gt;To help you get started, we have &lt;a href="https://aka.ms/costs-less"&gt;monthly FREE&lt;/a&gt; grants on all tiers – 50 vCPU Hours and 100 memory GB Hours per tier. These are the number of FREE hours per month BEFORE any usage is billed. &lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/do-more-with-spring-boot-3-2022-12-07/Monthly-Free-Grants-3.jpg"/&gt;&lt;h2&gt;&lt;a href="#additional-resources" class="anchor" name="additional-resources"&gt;&lt;/a&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Learn using an &lt;a href="https://learn.microsoft.com/en-us/training/modules/azure-spring-cloud-workshop/"&gt;MS Learn module&lt;/a&gt; or &lt;a href="https://github.com/microsoft/azure-spring-cloud-training"&gt;self-paced workshop&lt;/a&gt; on GitHub&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/Azure-Samples/acme-fitness-store"&gt;Deploy&lt;/a&gt; the demo Fitness Store Spring Boot app to Azure&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/azure-samples/animal-rescue"&gt;Deploy&lt;/a&gt; the demo Animal Rescue Spring Boot app to Azure&lt;/li&gt;
+  &lt;li&gt;Learn &lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/"&gt;more&lt;/a&gt; about implementing solutions on Azure Spring Apps&lt;/li&gt;
+  &lt;li&gt;Deploy Spring Boot apps by leveraging enterprise best practices – &lt;a href="https://learn.microsoft.com/en-us/azure/spring-apps/reference-architecture?tabs=azure-spring-standard"&gt;Azure Spring Apps Reference Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Migrate your &lt;a href="https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-apps"&gt;Spring Boot&lt;/a&gt;, &lt;a href="https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier"&gt;Spring Cloud&lt;/a&gt;, and &lt;a href="https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-tomcat-to-azure-spring-apps"&gt;Tomcat&lt;/a&gt; applications to Azure Spring Apps&lt;/li&gt;
+  &lt;li&gt;Wire Spring applications to &lt;a href="https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/"&gt;interact with Azure services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For feedback and questions, &lt;a href="mailto:AzureSpringCloud-Talk@service.microsoft.com"&gt;please e-mail us.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tools 4.17.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/07/spring-tools-4-17-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2022-12-07:5030</id>
+    <updated>2022-12-07T16:00:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.17.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;updated to Eclipse 2022-12 release (&lt;a href="https://www.eclipse.org/eclipseide/2022-12/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#early-access-to-new-experimental-features" class="anchor" name="early-access-to-new-experimental-features"&gt;&lt;/a&gt;early access to new experimental features&lt;/h4&gt;
+&lt;p&gt;Among a number of bug fixes and minor improvements, this release introduces experimental support for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Boot version validations: The IDE will tell you when there is a newer major, minor, or patch version available for your Spring Boot project&lt;/li&gt;
+  &lt;li&gt;Spring Boot upgrade support: The tooling will help you upgrading your existing projects to newer Spring Boot versions, including upgrades to newer patch and minor versions, as well as newer major versions (e.g. upgrading to Spring Boot 3)&lt;/li&gt;
+  &lt;li&gt;Spring specific validations and refactorings: The tooling will indicate whether something can or should be changed in your source code to keep your Spring project up-to-date with the latest recommendations or advancements in Spring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To learn more about these new experimental features, please take a look at the user guide: &lt;a href="https://github.com/spring-projects/sts4/wiki/"&gt;https://github.com/spring-projects/sts4/wiki/&lt;/a&gt;&lt;br/&gt;And we would like to hear from you. Please let us know if you come across any issues or have thoughts and wishes for further improvements in this space: &lt;a href="https://github.com/spring-projects/sts4/issues"&gt;https://github.com/spring-projects/sts4/issues&lt;/a&gt;&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-12-07-4170-release-incl-language-servers-version-1410"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-12-07-4170-release-incl-language-servers-version-1410&lt;/a&gt;&lt;/p&gt;&lt;h4&gt;&lt;a href="#downloads" class="anchor" name="downloads"&gt;&lt;/a&gt;downloads&lt;/h4&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spring Tools 4.17.1 is scheduled to be released in early Febuary 2023.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 6th, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/06/this-week-in-spring-december-6th-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-12-06:5029</id>
+    <updated>2022-12-06T09:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How are you? You know what I&amp;rsquo;ve wanted to do? See my friends on the Spring team in person since the pandemic descended. And, I&amp;rsquo;m overjoyed to relate, I&amp;rsquo;ve just had the privilege of a nice meeting with several of them last night. And I&amp;rsquo;m going to see more of them today! Seriously. I feel like I won the lottery. I&amp;rsquo;ve missed my friends. Hug your friends and family, friends. You never know when the next pandemic (or life in general) will put distance between you and them. So, in order to close that distance, I&amp;rsquo;m going to go back to meetings with them, and I&amp;rsquo;ll leave you with yet another week&amp;rsquo;s curated list of content. (Can you believe we&amp;rsquo;re like four weeks away from 2023?)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/01/a-bootiful-podcast-java-champion-gunnar-morling-about-messaging-middleware-debezium-change-data-capture-and-more"&gt;A Bootiful Podcast: Java Champion Gunnar Morling about messaging middleware, Debezium, change data capture, and more.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/hiiamfabian/status/1598720268481986567?s=12&amp;t=GnAsFlAXMglSk0_oHs31HA"&gt;&#x1f4e3; Spring Boot Migrator 0.13.0 Release &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/moderneinc/status/1597345901248643072"&gt;Moderne, Inc. on Twitter: &amp;quot;Migration engineering can be complex. For those moving to @springboot 3.0, here&amp;rsquo;s a guide from @tkvangorder to ease your migration. &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721157238/0/baeldung~REST-vs-GraphQL-vs-gRPC-%e2%80%93-Which-API-to-Choose"&gt;REST vs. GraphQL vs. gRPC – Which API to Choose?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.sivalabs.in/spring-boot-3-error-reporting-using-problem-details/"&gt;SivaLabs - Spring Boot 3 : Error Responses using Problem Details for HTTP APIs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.sivalabs.in/using-java-records-with-spring-boot-3/"&gt;SivaLabs - Using Java Records with Spring Boot 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://moderne.io/blog/speed-your-spring-boot-3-0-migration"&gt;Speed Your Spring Boot 3.0 Migration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/02/spring-cloud-2022-0-0-release-candidate-3-codename-kilburn-has-been-released"&gt;Spring Cloud 2022.0.0 Release Candidate 3 (codename Kilburn) Has Been Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/05/spring-shell-2-1-4-and-3-0-0-m3-are-now-available"&gt;Spring Shell 2.1.4 and 3.0.0-M3 are now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/02/spring-ws-samples-upgraded-for-spring-boot-3-0"&gt;Spring WS Samples upgraded for Spring Boot 3.0!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://streamnative.io/blog/engineering/2022-11-29-spring-into-pulsar-part-2-spring-based-microservices-for-multiple-protocols-with-apache-pulsar/?_hsmi=236088322&amp;_hsenc=p2ANqtz-_qisX4N_GC8oBfRmELjybtuAjCYFhRyFpn9RXdIRXjEUZxvdW0vaQ4RjeI_bn9IMWonR9rSJ_Lw5Fzyy9RfsJguimDlw"&gt;Spring into Pulsar Part 2: Spring-based Microservices for Multiple Protocols with Apache Pulsar - StreamNative&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/720797172/0/baeldung~Using-Firebase-Cloud-Messaging-in-Spring-Boot-Applications"&gt;Using Firebase Cloud Messaging in Spring Boot Applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love Maciej Walkowiak&amp;rsquo;s &lt;a href="https://maciejwalkowiak.com/blog/whats-new-in-spring/"&gt;What&amp;rsquo;s new in Spring? posts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Want to use Vaadin Flow with Spring Boot 3 and its new AOT engine? Here&amp;rsquo;s a proof-of-concept that&amp;rsquo;ll prove useful! &lt;a href="https://github.com/marcushellberg/flow-native"&gt;marcushellberg/flow-native&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/12/01/runtime-observability-opentelemetry/"&gt;Blog: Boosting Kubernetes container runtime observability with OpenTelemetry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/12/02/seccomp-notifier/"&gt;Blog: Finding suspicious syscalls with the seccomp notifier&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/12/05/forensic-container-checkpointing-alpha/"&gt;Blog: Forensic container checkpointing in Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Shell 2.1.4 and 3.0.0-M3 are now available</title>
     <link rel="alternate" href="https://spring.io/blog/2022/12/05/spring-shell-2-1-4-and-3-0-0-m3-are-now-available" />
@@ -1011,93 +1126,6 @@ class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
   &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/719774110/0/baeldung~Kafkas-Shift-from-ZooKeeper-to-Kraft"&gt;Kafka’s Shift from ZooKeeper to Kraft&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/11/18/upcoming-changes-in-kubernetes-1-26/"&gt;Blog: Kubernetes Removals, Deprecations, and Major Changes in 1.26&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.0.3 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/22/spring-for-graphql-1-0-3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2022-11-22:5009</id>
-    <updated>2022-11-22T11:25:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of everyone involved, I&amp;rsquo;m pleased to announce that Spring for GraphQL 1.0.3 is now available from Maven Central. This version will be shipped with Spring Boot 2.7.6 due for release later this week.&lt;/p&gt;
-&lt;p&gt;This &lt;a href="https://github.com/spring-projects/spring-graphql/releases/tag/v1.0.3"&gt;release includes&lt;/a&gt; a number of enhancements, documentation improvements, dependency upgrades, and a couple of bug fixes. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re also about to release the 1.1.0 release, targeting Spring Boot 3.0.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.3/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Authorization Server 1.0 is now GA</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/22/spring-authorization-server-1-0-is-now-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5007</id>
-    <updated>2022-11-22T10:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, we are very excited to announce the general availability of Spring Authorization Server 1.0.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can download it from Maven Central by using the module coordinates:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;implementation 'org.springframework.security:spring-security-oauth2-authorization-server:1.0.0'&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Authorization Server has come a long way since its initial commit on April 2, 2020, as the APIs have stabilized and matured over this time. A lot of effort and care has been put into this project to ensure a robust foundation for its continued growth. This first major release delivers a full &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/overview.html#feature-list"&gt;feature set&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Authorization Server 1.0 is based on Spring Security 6.0, which is based on Spring Framework 6.0 and will require a minimum of JDK 17 at runtime. This major release inherits the &lt;a href="https://tanzu.vmware.com/support/oss"&gt;VMware Tanzu OSS support policy&lt;/a&gt;. &lt;a href="https://tanzu.vmware.com/spring-runtime"&gt;Commercial support&lt;/a&gt;, which offers an extended support period, is also available from VMware.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/tree/main/samples"&gt;samples&lt;/a&gt;, to become familiar with setup and configuration.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team, I would like to thank everyone who has contributed and helped grow this project. We hope to continue to work together and ultimately establish Spring Authorization Server as the de facto framework for OAuth2 Authorization Server support on the Java platform.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; | &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Authorization Server 0.4.0 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/22/spring-authorization-server-0-4-0-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5006</id>
-    <updated>2022-11-22T10:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 0.4.0.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can download it from Maven Central by using the module coordinates:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;implementation 'org.springframework.security:spring-security-oauth2-authorization-server:0.4.0'&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-authorization-server/releases/tag/0.4.0"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/tree/0.4.x/samples"&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; | &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

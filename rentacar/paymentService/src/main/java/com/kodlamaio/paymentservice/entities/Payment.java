@@ -1,7 +1,5 @@
 package com.kodlamaio.paymentservice.entities;
 
-
-
 import java.time.LocalDate;
 
 import javax.persistence.Column;
