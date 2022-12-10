@@ -1,6 +1,0 @@
-package com.kodlamaio.paymentservice.entities;
-
-public class Akbank extends Bank{
-
-	
-}

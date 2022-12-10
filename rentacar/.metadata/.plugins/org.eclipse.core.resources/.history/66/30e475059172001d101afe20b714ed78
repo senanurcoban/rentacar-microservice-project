@@ -1,9 +1,0 @@
-package com.kodlamaio.paymentservice.api;
-
-
-
-
-public class PaymentsController {
-
-	
-}

@@ -1,5 +1,0 @@
-package com.kodlamaio.paymentservice.business.concretes;
-
-public class PaymentManager {
-
-}

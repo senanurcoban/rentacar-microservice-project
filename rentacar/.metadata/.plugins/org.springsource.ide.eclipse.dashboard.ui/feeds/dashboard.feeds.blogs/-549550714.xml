@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-12-07T17:00:00Z</updated>
+  <updated>2022-12-08T11:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Vaadin's Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-12-08:5032</id>
+    <updated>2022-12-08T11:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Vaadin&amp;rsquo;s &lt;a href="https://twitter.com/marcushellberg"&gt;Marcus Hellberg (@marcushellberg)&lt;/a&gt; about rich UIs, Vaadin Flow, the new Hilla Framework, GraalVM native image compilation, and so much more &lt;/p&gt;
+&lt;iframe title="Vaadin’s Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=wreg8-1333b75-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Do more with Azure Spring Apps – scale to zero and enhance productivity</title>
     <link rel="alternate" href="https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity" />
@@ -72,7 +85,7 @@
     <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
 &lt;p&gt;I am happy to announce the 4.17.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;updated to Eclipse 2022-12 release (&lt;a href="https://www.eclipse.org/eclipseide/2022-12/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;updated to Eclipse 2022-12 release (&lt;a href="https://eclipseide.org/release/noteworthy/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;&lt;h4&gt;&lt;a href="#early-access-to-new-experimental-features" class="anchor" name="early-access-to-new-experimental-features"&gt;&lt;/a&gt;early access to new experimental features&lt;/h4&gt;
 &lt;p&gt;Among a number of bug fixes and minor improvements, this release introduces experimental support for:&lt;/p&gt;
 &lt;ul&gt;
@@ -1086,46 +1099,6 @@ class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
 &lt;p&gt;Enjoy! &lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TOfYlLjXufw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Also, Happy thanksgiving (if you celebrate) from us to you!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - November 22nd, 2022 - Spring Boot 3 and Thanksgiving edition!</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/22/this-week-in-spring-november-22nd-2022-spring-boot-3-and-thanksgiving-edition" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-11-22:5012</id>
-    <updated>2022-11-22T19:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! It&amp;rsquo;s Tuesday, the 22nd of November, 2022, as I write this, which means we&amp;rsquo;re two days away from Spring Boot 3 &lt;em&gt;and&lt;/em&gt; Thanksgiving. Spring Boot 3, I&amp;rsquo;ve written about in abundance so I won&amp;rsquo;t rehash that. If you want to learn more about some of the amazing new features in Spring Framework 6 and Spring Boot 3, perhaps check out my Spring Tips installment introducing them in this episode:&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aUm5WZjh8RA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;And, of course, a major new feature in Spring Boot 3 is the new ahead-of-time (AOT) engine, about which I speak at great length in tomorrow&amp;rsquo;s new installment of Spring Tips:&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TOfYlLjXufw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;This video is done so that you can watch the first part as an application developer and get a lot out of it. Folks who want to take the concepts further - as a library, or framework, or developer, can carry on &amp;lsquo;till the end of the video. Either way, I hope you learn something interesting in your journey to production with Spring Boot 3, due - again - in less than 48 hours&amp;rsquo; time!&lt;/p&gt;
-&lt;p&gt;I mentioned Thanksgiving. The US isn&amp;rsquo;t the only country to have such a holiday, so I&amp;rsquo;m perhaps telling some folks things they already know, for which I&amp;rsquo;m sorry, but: Thanksgiving is a (self-explanatory) holiday in which people are encouraged to be &lt;em&gt;thankful&lt;/em&gt;. To take stock in our lives and find reasons for gratitude. My friends, I am grateful for you. I&amp;rsquo;m sure I speak for the entire Spring team (celebrating Thanksgiving or not!) when I say that we are &lt;em&gt;all&lt;/em&gt; thankful for you. Happy Thanksgiving, my friends.&lt;/p&gt;
-&lt;p&gt;Without further ado, let&amp;rsquo;s dive right into this week&amp;rsquo;s epic roundup.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/17/a-bootiful-podcast-java-champion-legendary-engineer-and-teacher-trisha-gee"&gt;A Bootiful Podcast: Java Champion, legendary engineer, and teacher Trisha Gee&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/720077072/0/baeldung~Access-HTTPS-REST-Service-Using-Spring-RestTemplate"&gt;Access HTTPS REST Service Using Spring RestTemplate&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/719775138/0/baeldung~Enable-and-Disable-Endpoints-at-Runtime-With-Spring-Boot"&gt;Enable and Disable Endpoints at Runtime With Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/720077070/0/baeldung~Expression-Types-in-Thymeleaf"&gt;Expression Types in Thymeleaf&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/21/new-major-releases-of-spring-for-apache-kafka-and-spring-for-rabbitmq"&gt;New Major Releases of Spring for Apache Kafka and Spring for RabbitMQ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/22/spring-authorization-server-0-4-0-available-now"&gt;Spring Authorization Server 0.4.0 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/22/spring-authorization-server-1-0-is-now-ga"&gt;Spring Authorization Server 1.0 is now GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/15/spring-cloud-dataflow-2-10-0-rc2-released"&gt;Spring Cloud Dataflow 2.10.0-RC2 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/18/spring-data-2021-2-6-and-2021-1-10-available"&gt;Spring Data 2021.2.6 and 2021.1.10 available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/18/spring-data-2022-0-goes-ga"&gt;Spring Data 2022.0 goes GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/16/spring-framework-5-3-24-available-now"&gt;Spring Framework 5.3.24 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga"&gt;Spring Framework 6.0 goes GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/17/spring-modulith-0-1-rc1-released"&gt;Spring Modulith 0.1 RC1 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/21/spring-rest-docs-2-0-7-release"&gt;Spring REST Docs 2.0.7.RELEASE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/21/spring-rest-docs-3-0-0"&gt;Spring REST Docs 3.0.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/21/spring-security-5-8-and-6-0-are-now-ga"&gt;Spring Security 5.8 and 6.0 are now GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/21/spring-web-services-4-0-0-is-now-ga"&gt;Spring Web Services 4.0.0 is now GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/11/22/spring-for-graphql-1-0-3-released"&gt;Spring for GraphQL 1.0.3 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/719774110/0/baeldung~Kafkas-Shift-from-ZooKeeper-to-Kraft"&gt;Kafka’s Shift from ZooKeeper to Kraft&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/11/18/upcoming-changes-in-kubernetes-1-26/"&gt;Blog: Kubernetes Removals, Deprecations, and Major Changes in 1.26&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
