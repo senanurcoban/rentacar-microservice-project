@@ -5,7 +5,138 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-12-08T11:00:00Z</updated>
+  <updated>2022-12-15T21:00:00Z</updated>
+  <entry>
+    <title>Spring for Apache Pulsar 0.1.0 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/15/spring-for-apache-pulsar-0-1-0-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Chris Bono</name>
+    </author>
+    <id>tag:spring.io,2022-12-15:5038</id>
+    <updated>2022-12-15T21:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I’m happy to announce that Spring for Apache Pulsar &lt;code&gt;0.1.0&lt;/code&gt; has been released and is now available from &lt;a href="https://repo1.maven.org/maven2/org/springframework/pulsar/spring-pulsar-spring-boot-starter/0.1.0"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is the initial GA minor release of the framework. The full &lt;code&gt;1.0.0&lt;/code&gt; GA release is expected mid Q12023 and will contain many more features. Although it still lives in the experimental Spring projects it is expected to move into the main Spring projects as part of the full release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes" class="anchor" name="notable-changes"&gt;&lt;/a&gt;Notable Changes&lt;/h2&gt;
+&lt;p&gt;We have been busy adding features since our &lt;a href="https://spring.io/blog/2022/08/16/introducing-experimental-spring-support-for-apache-pulsar"&gt;last blog&lt;/a&gt;. Notable new features include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reactive support&lt;/li&gt;
+  &lt;li&gt;GraalVM Native Image Support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/releases/tag/0.1.0"&gt;release notes&lt;/a&gt; for more detail.&lt;/p&gt;
+&lt;p&gt;A great place to get started is the &lt;a href="https://docs.spring.io/spring-pulsar/docs/0.1.0/reference/html/#quick-tour"&gt;Quick Tour&lt;/a&gt; in the reference docs.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-pulsar"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-pulsar/docs/0.1.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-pulsar"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: Microsoft's Brian Benz on the state of Java, Microsoft, Azure, and so much more</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/15/a-bootiful-podcast-microsoft-s-brian-benz-on-the-state-of-java-microsoft-azure-and-so-much-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-12-15:5037</id>
+    <updated>2022-12-15T11:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to &lt;a href="https://twitter.com/bbenz"&gt;Microsoft&amp;rsquo;s Brian Benz (@bbenz)&lt;/a&gt;&lt;/p&gt;
+&lt;iframe title="Microsoft’s Brian Benz on the state of Java, Microsoft, Azure, and so much more" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=spj7w-133c0c6-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 6.0.3 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/15/spring-framework-6-0-3-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Brian Clozel</name>
+    </author>
+    <id>tag:spring.io,2022-12-13:5035</id>
+    <updated>2022-12-15T09:47:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;6.0.3&lt;/code&gt; is available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;6.0.3&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v6.0.3"&gt;48 fixes and documentation improvements&lt;/a&gt;. This version will be shipped with Spring Boot 3.0.1, &lt;a href="https://calendar.spring.io/"&gt;to be released next week&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.3/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Notice of Permissions Changes to repo.spring.io, January 2023</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/14/notice-of-permissions-changes-to-repo-spring-io-january-2023" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Michael Minella</name>
+    </author>
+    <id>tag:spring.io,2022-12-14:5036</id>
+    <updated>2022-12-15T06:01:00Z</updated>
+    <content type="html">&lt;p&gt;A critical piece of infrastructure, the &lt;a href="https://repo.spring.io"&gt;Spring Artifactory instance&lt;/a&gt; lies at the heart of the Spring portfolio development work. Since 2013, JFrog, Inc., has generously sponsored the instance for the Spring developer community.&lt;/p&gt;
+&lt;p&gt;In October 2020, we announced some &lt;a href="https://spring.io/blog/2020/10/29/notice-of-permissions-changes-to-repo-spring-io-fall-and-winter-2020"&gt;permissions changes to our Artifactory instance&lt;/a&gt; to restrict anonymous access to the platform for third-party dependencies.&lt;/p&gt;
+&lt;p&gt;At that time, we asked the Community to source Spring releases from Maven Central. Today, we are announcing some changes to our infrastructure in alignment with that request so that we can better position repo.spring.io for the long term.&lt;/p&gt;&lt;h2&gt;&lt;a href="#how-to-use-repo-spring-io" class="anchor" name="how-to-use-repo-spring-io"&gt;&lt;/a&gt;How to use repo.spring.io&lt;/h2&gt;
+&lt;p&gt;repo.spring.io is intended for the download of snapshots and milestone artifacts that are not available from Maven Central. All other artifacts within the Spring ecosystem should be retrieved from Maven Central. Because of this, we will be configuring anonymous clients (non-authenticated) to resolve only from /snapshot and /milestone repositories. These repositories will continue to provide pre-release access to fixes and features for the community, letting you test, evaluate, and provide feedback on those pre-release builds.&lt;/p&gt;
+&lt;p&gt;Anonymous clients querying /release, /libs-release, /libs-milestone /libs-snapshot, /plugins-release, or any other virtual repository may be denied. If requests persist, their senders will risk being banned.&lt;/p&gt;
+&lt;p&gt;Official plugin releases by the Spring Team are available in Maven Central. Plugin snapshots and milestones will continue to resolve in their respective repositories:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;/plugins-snapshot &#xD;
+/plugins-milestone
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For everything else, for the better of the community, we expect that they would be resolved from Maven Central.&lt;/p&gt;&lt;h2&gt;&lt;a href="#upcoming-changes" class="anchor" name="upcoming-changes"&gt;&lt;/a&gt;Upcoming Changes&lt;/h2&gt;
+&lt;p&gt;If you use repo.spring.io, as directed by &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;, (for example, using only &lt;code&gt;/snapshot&lt;/code&gt; and &lt;code&gt;/milestone&lt;/code&gt;), these changes most likely will not affect you.&lt;/p&gt;
+&lt;p&gt;If you are resolving from any of the other repos or administer a downstream Artifactory/Nexus cache, note the following dates:&lt;/p&gt;&lt;h3&gt;&lt;a href="#jan-5-2023" class="anchor" name="jan-5-2023"&gt;&lt;/a&gt;Jan 5, 2023&lt;/h3&gt;
+&lt;p&gt;First brown-out. 4 hours in duration.&lt;br/&gt;Spring Releases will not be available from the repo.spring.io repository.&lt;br/&gt;Virtual repositories will continue to resolve snapshots and milestones anonymously. &lt;/p&gt;&lt;h3&gt;&lt;a href="#jan-12-2023" class="anchor" name="jan-12-2023"&gt;&lt;/a&gt;Jan 12, 2023&lt;/h3&gt;
+&lt;p&gt;Second brown-out. 4 hours in duration.&lt;br/&gt;Spring Releases will not be available from the repository.&lt;br/&gt;Virtual repositories will NOT resolve snapshots and milestones anonymously.&lt;br/&gt;Only &lt;code&gt;/snapshot&lt;/code&gt;, &lt;code&gt;/milestone&lt;/code&gt;, &lt;code&gt;/plugins-snapshot&lt;/code&gt;, and &lt;code&gt;/plugins-milestone&lt;/code&gt; will resolve anonymously.&lt;/p&gt;&lt;h3&gt;&lt;a href="#jan-19-2023" class="anchor" name="jan-19-2023"&gt;&lt;/a&gt;Jan 19, 2023&lt;/h3&gt;
+&lt;p&gt;Third and final brown-out. 10 hours in duration.&lt;br/&gt;Spring Releases will not be available from the repository.&lt;br/&gt;Virtual repositories will NOT resolve snapshots and milestones anonymously.&lt;br/&gt;Only &lt;code&gt;/snapshot&lt;/code&gt;, &lt;code&gt;/milestone&lt;/code&gt;, &lt;code&gt;/plugins-snapshot&lt;/code&gt;, and &lt;code&gt;/plugins-milestone&lt;/code&gt; will resolve anonymously.&lt;/p&gt;&lt;h3&gt;&lt;a href="#january-26-2023" class="anchor" name="january-26-2023"&gt;&lt;/a&gt;January 26, 2023&lt;/h3&gt;
+&lt;p&gt;Anonymous clients will no longer be able to download Spring Releases (including released plugins) from &lt;a href="https://repo.spring.io"&gt;https://repo.spring.io&lt;/a&gt;, instead they should be sourced from Maven Central.&lt;br/&gt;Virtual repositories will NOT resolve snapshots and milestones anonymously.&lt;br/&gt;Only &lt;code&gt;/snapshot&lt;/code&gt; and &lt;code&gt;/milestone&lt;/code&gt; will resolve anonymously.&lt;/p&gt;
+&lt;p&gt;We appreciate your understanding in helping us provide key infrastructure in a way that works for our entire community. We would also like to thank JFrog for working with us over the years in providing this key piece of infrastructure for such a large community. Repository administrators out there should feel free to reach out to us if you are concerned about any downstream replication.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 13th, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/13/this-week-in-spring-december-13th-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-12-13:5034</id>
+    <updated>2022-12-13T09:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I truly, absolutely, can not believe that we&amp;rsquo;re nearly done with the year already! Have you made your new years&amp;rsquo; resolutions? Submitted your expense reports? It&amp;rsquo;s that time of the year when I&amp;rsquo;m going to start focusing on staying warm and avoiding undue work for a while :-) I hope you do too. This is why I&amp;rsquo;m glad I write these roundups: I hope they save people from extra, undue work! So, with that&amp;hellip; let&amp;rsquo;s dive into the roundup!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more"&gt;A Bootiful Podcast: Vaadin&amp;rsquo;s Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721380042/0/baeldung~A-Guide-to-Spring-CredHub"&gt;A Guide to Spring CredHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity"&gt;Do more with Azure Spring Apps – scale to zero and enhance productivity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721856188/0/baeldung~Form-Login-and-Basic-Authentication-in-springdocopenapi"&gt;Form Login and Basic Authentication in springdoc-openapi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721583490/0/baeldung~Getting-Started-with-Blaze-Persistence"&gt;Getting Started with Blaze Persistence&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721376820/0/baeldung~Guide-to-Java-PriorityQueue"&gt;Guide to Java PriorityQueue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721376818/0/baeldung~Java-Generics-PECS-Producer-Extends-Consumer-Super"&gt;Java Generics PECS – Producer Extends Consumer Super&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/reactive-spring-security-simple/"&gt;RSocket Security with Spring Boot via Spring Security | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721581746/0/baeldung~Rate-Limiting-With-Client-IP-in-Spring-Cloud-Gateway"&gt;Rate Limiting With Client IP in Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721375482/0/baeldung~Reinitialize-Singleton-Bean-in-Spring-Context"&gt;Reinitialize Singleton Bean in Spring Context&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;a very important release - v3.0.0 - of the &lt;code&gt;rickroll-security-spring-boot-starter&lt;/code&gt; &lt;a href="https://github.com/TomCools/rickroll-security-spring-boot-starter/releases/tag/v3.0.0"&gt; · TomCools/rickroll-security-spring-boot-starter&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721375486/0/baeldung~Running-Spring-Boot-Applications-with-the-Embedded-Camunda-Engine"&gt;Running Spring Boot Applications with the Embedded Camunda Engine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/rsocket-tls-spring-boot/"&gt;Securing RSocket TCP with TLS | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/12/spring-cloud-data-flow-version-2-10-0-released"&gt;Spring Cloud Data Flow version 2.10.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/dependency-injection/"&gt;Spring Dependency Injection | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/07/spring-tools-4-17-0-released"&gt;Spring Tools 4.17.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/distributed-tracing-reactive-kotlin-pt1/"&gt;Tracing a Reactive Kotlin App with Spring Cloud Sleuth | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Data Flow version 2.10.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/12/spring-cloud-data-flow-version-2-10-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Corneil du Plessis</name>
+    </author>
+    <id>tag:spring.io,2022-12-12:5033</id>
+    <updated>2022-12-12T16:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, we are very excited to announce the &lt;code&gt;2.10.0&lt;/code&gt; release of Spring Cloud Data Flow is now available from Maven Central.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-updates" class="anchor" name="spring-updates"&gt;&lt;/a&gt;Spring updates&lt;/h3&gt;
+&lt;p&gt;Updates to the following versions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Boot 2.7.6&lt;/li&gt;
+  &lt;li&gt;Spring Framework 5.3.24&lt;/li&gt;
+  &lt;li&gt;Spring Cloud 2021.0.5&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-shell" class="anchor" name="spring-shell"&gt;&lt;/a&gt;Spring Shell&lt;/h3&gt;
+&lt;p&gt;Spring Shell has been updated to 2.1.4.&lt;/p&gt;&lt;h3&gt;&lt;a href="#documentation-updates" class="anchor" name="documentation-updates"&gt;&lt;/a&gt;Documentation Updates&lt;/h3&gt;&lt;h4&gt;&lt;a href="#container-images-for-arm" class="anchor" name="container-images-for-arm"&gt;&lt;/a&gt;Container images for ARM.&lt;/h4&gt;
+&lt;p&gt;Spring Cloud Data Flow and Skipper, and Stream Application projects contain scripts to use in creating containers when running on an ARM platform. The &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/current/reference/htmlsingle/#create-containers"&gt;Reference Guide&lt;/a&gt; has a section describing the use of the scripts.&lt;/p&gt;&lt;h4&gt;&lt;a href="#scripts-for-local-kuberenetes-development" class="anchor" name="scripts-for-local-kuberenetes-development"&gt;&lt;/a&gt;Scripts for local Kuberenetes Development&lt;/h4&gt;
+&lt;p&gt;We have added a collection of scripts to the Spring Cloud Data Flow that makes it easy to launch a local Kuberenetes cluster and install SCDF with MariaDB and RabbitMQ or Kafka. See the &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/current/reference/htmlsingle/#local-k8s-development"&gt;Reference Guide&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;The detailed &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.10.0"&gt;release notes&lt;/a&gt; contain more info.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Vaadin's Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more</title>
     <link rel="alternate" href="https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more" />
@@ -744,361 +875,6 @@ Artem&lt;/p&gt;
 &lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.7.6"&gt;44 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.7.6/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 6.0.2 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/24/spring-framework-6-0-2-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2022-11-24:5017</id>
-    <updated>2022-11-24T14:38:36Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;6.0.2&lt;/code&gt; is available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;6.0.2&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v6.0.2"&gt;4 fixes and documentation improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.2/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.6.14 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/24/spring-boot-2-6-14-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2022-11-24:5016</id>
-    <updated>2022-11-24T14:17:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.6.14&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.6.14"&gt;39 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#end-of-life" class="anchor" name="end-of-life"&gt;&lt;/a&gt;End of life&lt;/h3&gt;
-&lt;p&gt;It&amp;rsquo;s just over a year since the release of Spring Boot 2.6.0 which means that, &lt;a href="https://spring.io/projects/spring-boot#support"&gt;as per our open source support policy&lt;/a&gt;, 2.6.14 is the last release that&amp;rsquo;s planned in the 2.6.x line. Releases may be made in the future, but only in response to a &lt;a href="https://tanzu.vmware.com/spring-runtime"&gt;commercial support&lt;/a&gt; request.&lt;/p&gt;
-&lt;p&gt;As &lt;a href="https://spring.io/blog/2022/05/24/preparing-for-spring-boot-3-0"&gt;previously announced&lt;/a&gt;, Spring Boot 2.7 will be the last minor in the 2.x line. As such, we’ve extended our open source support for 2.7.x release by an additional 6 months until November 2023. In addition, &lt;a href="https://tanzu.vmware.com/spring-runtime"&gt;commercial support&lt;/a&gt; for Spring Boot 2.7 has also been extended and is available until February 2025.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.6.14/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Batch 5.0 Goes GA!</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/24/spring-batch-5-0-goes-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mahmoud Ben Hassine</name>
-    </author>
-    <id>tag:spring.io,2022-11-24:5018</id>
-    <updated>2022-11-24T10:00:00Z</updated>
-    <content type="html">&lt;p&gt;It is finally here! Spring Batch 5.0 is now generally available from Maven Central. Spring Batch 5 is the culmination of two years of work, including dozens of improvements, features, and bug fixes by more than 50 contributors! On Behalf of the team, I would like to thank ALL contributors who had a role in this huge release!&lt;/p&gt;
-&lt;p&gt;This blog post walks through the major highlights of this new generation of the framework. You can find the details of all the changes in the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/v5.0.0"&gt;release notes&lt;/a&gt; and the upgrade instructions in the &lt;a href="https://github.com/spring-projects/spring-batch/wiki/Spring-Batch-5.0-Migration-Guide"&gt;migration guide&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-new" class="anchor" name="what-rsquo-s-new"&gt;&lt;/a&gt;What&amp;rsquo;s new?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;New Java version baseline&lt;/li&gt;
-  &lt;li&gt;Major dependencies upgrade&lt;/li&gt;
-  &lt;li&gt;Full GraalVM native support&lt;/li&gt;
-  &lt;li&gt;Introduction of the new Observation API from Micrometer&lt;/li&gt;
-  &lt;li&gt;Execution context Meta-data improvement&lt;/li&gt;
-  &lt;li&gt;New default execution context serialization format&lt;/li&gt;
-  &lt;li&gt;SystemCommandTasklet enhancements&lt;/li&gt;
-  &lt;li&gt;Add support to use any type as a job parameter&lt;/li&gt;
-  &lt;li&gt;Improved job parameters conversion&lt;/li&gt;
-  &lt;li&gt;New Annotation Attributes in EnableBatchProcessing&lt;/li&gt;
-  &lt;li&gt;New Configuration Class for Infrastructure Beans&lt;/li&gt;
-  &lt;li&gt;Transaction Support in JobExplorer and JobOperator&lt;/li&gt;
-  &lt;li&gt;Automatic registration of a JobOperator with EnableBatchProcessing&lt;/li&gt;
-  &lt;li&gt;Test utilities configuration updates&lt;/li&gt;
-  &lt;li&gt;Migration to JUnit Jupiter&lt;/li&gt;
-  &lt;li&gt;Java Records Support Improvement&lt;/li&gt;
-  &lt;li&gt;UTF-8 by default&lt;/li&gt;
-  &lt;li&gt;Java 8 features updates&lt;/li&gt;
-  &lt;li&gt;New Maven Bill of Materials&lt;/li&gt;
-  &lt;li&gt;Full MariaDB support&lt;/li&gt;
-  &lt;li&gt;Support for SAP HANA as a job repository&lt;/li&gt;
-  &lt;li&gt;Improved documentation&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#new-java-version-baseline" class="anchor" name="new-java-version-baseline"&gt;&lt;/a&gt;New Java version baseline&lt;/h3&gt;
-&lt;p&gt;Spring Batch follows Spring Framework&amp;rsquo;s baselines for both Java version and third party dependencies. With Spring Batch 5, the Spring Framework version is being upgraded to Spring Framework 6, which requires Java 17. As a result, the Java version requirement for Spring Batch is also increasing to Java 17.&lt;/p&gt;&lt;h3&gt;&lt;a href="#major-dependencies-upgrade" class="anchor" name="major-dependencies-upgrade"&gt;&lt;/a&gt;Major dependencies upgrade&lt;/h3&gt;
-&lt;p&gt;To continue the integration with supported versions of the third party libraries that Spring Batch uses, Spring Batch 5 is updating the dependencies across the board to the following versions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Framework 6&lt;/li&gt;
-  &lt;li&gt;Spring Integration 6&lt;/li&gt;
-  &lt;li&gt;Spring Data 3&lt;/li&gt;
-  &lt;li&gt;Spring AMQP 3&lt;/li&gt;
-  &lt;li&gt;Spring for Apache Kafka 3&lt;/li&gt;
-  &lt;li&gt;Micrometer 1.10&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This release also marks the migration to:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Jakarta EE 9&lt;/li&gt;
-  &lt;li&gt;Hibernate 6&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#full-graalvm-native-support" class="anchor" name="full-graalvm-native-support"&gt;&lt;/a&gt;Full GraalVM native support&lt;/h3&gt;
-&lt;p&gt;The effort towards providing support to compile Spring Batch applications as native executables using the GraalVM native-image compiler has started in v4.2 and was shipped as experimental in v4.3.&lt;/p&gt;
-&lt;p&gt;In this release, the native support has been improved significantly by providing the necessary Ahead-Of-Time processing and runtime hints to natively compile Spring Batch applications with GraalVM. &lt;/p&gt;
-&lt;p&gt;In this blog post, we want to share with you some of the benchmarks we have been working on in that area. The following benchmarks are based on the &lt;a href="https://github.com/spring-projects/spring-aot-smoke-tests/tree/main/batch/batch"&gt;batch&lt;/a&gt; sample from the &lt;a href="https://github.com/spring-projects/spring-aot-smoke-tests"&gt;Spring Native&lt;/a&gt; samples project. These benchmarks show a comparison of the startup time and total execution time of the same batch application executed with a regular JVM and as a native executable:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/benas/spring-batch-lab/main/issues/native203/perf-native.png" alt="perf-native" /&gt;&lt;/p&gt;
-&lt;p&gt;The values shown here are the average of 10 executions of the sample using the following software and hardware setup:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;JVM: OpenJDK version &amp;ldquo;17&amp;rdquo; 2021-09-14&lt;/li&gt;
-  &lt;li&gt;GraalVM: OpenJDK Runtime Environment GraalVM CE 22.0.0.2&lt;/li&gt;
-  &lt;li&gt;MacOS BigSur v11.6.2 (CPU: 2,4 GHz 8-Core Intel Core i9, Memory: 32 GB 2667 MHz DDR4)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As these benchmarks show, a native Spring Batch application is &lt;em&gt;two&lt;/em&gt; times faster at startup and almost &lt;em&gt;ten&lt;/em&gt; times faster at runtime! This really is a game changer for cloud native batch workloads!&lt;/p&gt;&lt;h3&gt;&lt;a href="#introduction-of-the-new-observation-api-from-micrometer" class="anchor" name="introduction-of-the-new-observation-api-from-micrometer"&gt;&lt;/a&gt;Introduction of the new Observation API from Micrometer&lt;/h3&gt;
-&lt;p&gt;With the upgrade to Micrometer 1.10, you can now get Batch tracing in addition to Batch metrics. Spring Batch will create a span for each job and a span for each step within a job. This tracing meta-data can be collected and viewed on a dashboard like &lt;a href="https://zipkin.io"&gt;Zipkin&lt;/a&gt; for example.&lt;/p&gt;
-&lt;p&gt;Moreover, this release introduces new metrics:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;job.launch.count&lt;/code&gt;: This is &lt;code&gt;Counter&lt;/code&gt; that reports how many jobs have been launched through the &lt;code&gt;JobLauncher&lt;/code&gt;. This can be convenient for environments where batch jobs are scheduled and executed in a continuously running JVM.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;step.active&lt;/code&gt;: This metric of type &lt;code&gt;LongTaskTimer&lt;/code&gt; reports the currently active (ie running) step in a specific job. This metric is useful in situations where a job has several steps and one wants to know in which step the processing is currently happening.&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#execution-context-meta-data-improvement" class="anchor" name="execution-context-meta-data-improvement"&gt;&lt;/a&gt;Execution context Meta-data improvement&lt;/h3&gt;
-&lt;p&gt;In addition to what Spring Batch already persists in the execution context with regard to runtime information (like the step type, the restart flag, etc), this release adds an important detail in the execution context which is the Spring Batch version that was used to serialize the context.&lt;/p&gt;
-&lt;p&gt;While this seems a detail, it has a huge added value when debugging upgrade issues with regard to execution context serialization and deserialization.&lt;/p&gt;&lt;h3&gt;&lt;a href="#new-default-execution-context-serialization-format" class="anchor" name="new-default-execution-context-serialization-format"&gt;&lt;/a&gt;New default execution context serialization format&lt;/h3&gt;
-&lt;p&gt;In this release, the &lt;code&gt;DefaultExecutionContextSerializer&lt;/code&gt; was updated to serialize/deserialize the context to/from Base64. &lt;/p&gt;
-&lt;p&gt;Moreover, the default &lt;code&gt;ExecutionContextSerializer&lt;/code&gt; configured by &lt;code&gt;@EnableBatchProcessing&lt;/code&gt; or &lt;code&gt;DefaultBatchConfiguration&lt;/code&gt; was changed from &lt;code&gt;JacksonExecutionContextStringSerializer&lt;/code&gt; to &lt;code&gt;DefaultExecutionContextSerializer&lt;/code&gt;. The dependency to Jackson is now optional. In order to use the &lt;code&gt;JacksonExecutionContextStringSerializer&lt;/code&gt;, &lt;code&gt;jackson-core&lt;/code&gt; should be added to the classpath.&lt;/p&gt;&lt;h3&gt;&lt;a href="#systemcommandtasklet-enhancements" class="anchor" name="systemcommandtasklet-enhancements"&gt;&lt;/a&gt;SystemCommandTasklet enhancements&lt;/h3&gt;
-&lt;p&gt;The &lt;code&gt;SystemCommandTasklet&lt;/code&gt; has been revisited in this release and was changed as follows:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-  &lt;p&gt;A new strategy interface named &lt;code&gt;CommandRunner&lt;/code&gt; was introduced in order to decouple the command execution from the tasklet execution. The default implementation is the &lt;code&gt;JvmCommandRunner&lt;/code&gt; which uses the &lt;code&gt;java.lang.Runtime#exec&lt;/code&gt; API to run system commands. This interface can be implemented to use any other API to run system commands.&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;The method that runs the command now accepts an array of &lt;code&gt;String&lt;/code&gt;s representing the command and its arguments. There is no need to tokenize the command or do any pre-processing anymore. This change makes the API more intuitive, and less prone to errors.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#add-support-to-use-any-type-as-a-job-parameter" class="anchor" name="add-support-to-use-any-type-as-a-job-parameter"&gt;&lt;/a&gt;Add support to use any type as a job parameter&lt;/h3&gt;
-&lt;p&gt;Up to version 4, Spring Batch supported only 4 types that can be used as job parameters, which are &lt;code&gt;long&lt;/code&gt;, &lt;code&gt;double&lt;/code&gt;, &lt;code&gt;String&lt;/code&gt; and &lt;code&gt;Date&lt;/code&gt;. While this was convenient to simplify job parameters handling on the framework&amp;rsquo;s side, it turns out to be constraining on the user&amp;rsquo;s side. For instance, what if one wants to use a &lt;code&gt;boolean&lt;/code&gt; or a custom type as a job parameter? This required additional conversions to one of the supported types in Spring Batch, which quickly became inconvenient to users.&lt;/p&gt;
-&lt;p&gt;In this release, we have added support to use any type as a job parameter. The main change behind this improvement is the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint diff"&gt;---public class JobParameter implements Serializable {&#xD;
-+++public class JobParameter&amp;lt;T&amp;gt; implements Serializable {&#xD;
-&#xD;
----   private Object parameter;&#xD;
-+++   private T value;&#xD;
-&#xD;
----   private ParameterType parameterType;&#xD;
-+++   private Class&amp;lt;T&amp;gt; type;&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This change has an impact on how job parameters are persisted in the database. Please check &lt;a href="https://github.com/spring-projects/spring-batch/wiki/Spring-Batch-5.0-Migration-Guide#column-change-in-batch_job_execution_params"&gt;the migration guide&lt;/a&gt; for database schema changes. The fully qualified name of the type of the parameter is now persisted as a &lt;code&gt;String&lt;/code&gt;, as well as the parameter value. String literals are converted to the parameter types with the standard Spring conversion service. The standard conversion service can be enriched with any required converter to convert user specific types to and from String literals.&lt;/p&gt;&lt;h3&gt;&lt;a href="#improved-job-parameters-conversion" class="anchor" name="improved-job-parameters-conversion"&gt;&lt;/a&gt;Improved job parameters conversion&lt;/h3&gt;
-&lt;p&gt;The default notation of job parameters in v4 was specified as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;[+|-]parameterName(parameterType)=parameterValue
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;where &lt;code&gt;parameterType&lt;/code&gt; is one of &lt;code&gt;[string,long,double,date]&lt;/code&gt;. While this notation was concise, it showed several limitations as it does not play well with environment variables and is not friendly with Spring Boot.&lt;/p&gt;
-&lt;p&gt;In v5, we have changed the default notation as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;parameterName=parameterValue,parameterType,identificationFlag
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;where &lt;code&gt;parameterType&lt;/code&gt; is the fully qualified name of the type of the parameter. For example, the following key/value pair:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;schedule.date=2022-12-12,java.time.LocalDate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;will be converted to an identifying job parameter of type &lt;code&gt;java.time.LocalDate&lt;/code&gt; with the value &lt;code&gt;2022-12-12&lt;/code&gt;. Note how the identification flag is optional and defaults to &lt;code&gt;true&lt;/code&gt;. This new default notation is well suited for the majority of use cases, but it might not be convenient when the value contains a comma for example. For this reason, we have introduced a new &amp;ldquo;extended&amp;rdquo; notation that is inspired by Spring Boot&amp;rsquo;s &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config.application-json"&gt;Json Application Properties&lt;/a&gt; and which is specified as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;parameterName=&amp;#39;{&amp;quot;value&amp;quot;: &amp;quot;parameterValue&amp;quot;, &amp;quot;type&amp;quot;:&amp;quot;parameterType&amp;quot;, &amp;quot;identifying&amp;quot;: &amp;quot;booleanValue&amp;quot;}&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;where &lt;code&gt;parameterType&lt;/code&gt; is the fully qualified name of the type of the parameter. Spring Batch provides the &lt;code&gt;JsonJobParametersConverter&lt;/code&gt; to support this notation. It is of course possible to support any other notation by implementing the strategy interface &lt;code&gt;JobParametersConverter&lt;/code&gt; and registering the custom implementation in the job repository and job explorer.&lt;/p&gt;
-&lt;p&gt;We believe these two major changes of job parameters handling in Spring Batch are more convenient, more flexible and less prone to errors.&lt;/p&gt;&lt;h3&gt;&lt;a href="#new-annotation-attributes-in-enablebatchprocessing" class="anchor" name="new-annotation-attributes-in-enablebatchprocessing"&gt;&lt;/a&gt;New Annotation Attributes in EnableBatchProcessing&lt;/h3&gt;
-&lt;p&gt;In this release, the &lt;code&gt;@EnableBatchProcessing&lt;/code&gt; annotation introduced new attributes to specify which components and parameters should be used to configure the Batch infrastructure beans. For example, you can now specify which data source and transaction manager Spring Batch should configure in the job repository. The following snippet shows the new way to do such configuration:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableBatchProcessing(dataSourceRef = &amp;quot;batchDataSource&amp;quot;, transactionManagerRef = &amp;quot;batchTransactionManager&amp;quot;)&#xD;
-public class MyJobConfiguration {&#xD;
-&#xD;
-	@Bean&#xD;
-	public Job job(JobRepository jobRepository) {&#xD;
-		return new JobBuilder(&amp;quot;myJob&amp;quot;, jobRepository)&#xD;
-			 //define job flow as needed&#xD;
-			 .build();&#xD;
-	}&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In this example, &lt;code&gt;batchDataSource&lt;/code&gt; and &lt;code&gt;batchTransactionManager&lt;/code&gt; refer to beans in the application context that are used to configure the job repository and job explorer. You no longer need to define a custom &lt;code&gt;BatchConfiguer&lt;/code&gt;, which was removed in this release. For example, providing a custom execution context serializer in Spring Batch v4 was possible by providing a custom &lt;code&gt;BatchConfigurer&lt;/code&gt;, as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableBatchProcessing&#xD;
-public class MyJobConfigWithCustomSerializer {&#xD;
-&#xD;
-    @Bean&#xD;
-    public BatchConfigurer batchConfigurer() {&#xD;
-        return new DefaultBatchConfigurer() {&#xD;
-            @Override&#xD;
-            public JobRepository getJobRepository() {&#xD;
-                JobRepositoryFactoryBean factory = new JobRepositoryFactoryBean();&#xD;
-                factory.setSerializer(createCustomSerializer());&#xD;
-                // set other properties on the factory bean&#xD;
-                try {&#xD;
-                    factory.afterPropertiesSet();&#xD;
-                    return factory.getObject();&#xD;
-                } catch (Exception e) {&#xD;
-                    throw new RuntimeException(e);&#xD;
-                }&#xD;
-            }&#xD;
-&#xD;
-            @Override&#xD;
-            public JobExplorer getJobExplorer() {&#xD;
-                JobExplorerFactoryBean factoryBean = new JobExplorerFactoryBean();&#xD;
-                factoryBean.setSerializer(createCustomSerializer());&#xD;
-                // set other properties on the factory bean&#xD;
-                try {&#xD;
-                    factoryBean.afterPropertiesSet();&#xD;
-                    return factoryBean.getObject();&#xD;
-                } catch (Exception e) {&#xD;
-                    throw new RuntimeException(e);&#xD;
-                }&#xD;
-            }&#xD;
-&#xD;
-            private ExecutionContextSerializer createCustomSerializer() {&#xD;
-                Jackson2ExecutionContextStringSerializer serializer = new Jackson2ExecutionContextStringSerializer();&#xD;
-                // customize serializer&#xD;
-                return serializer;&#xD;
-            }&#xD;
-        };&#xD;
-    }&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In Spring Batch v5, you can provide a custom serializer as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableBatchProcessing(executionContextSerializerRef = &amp;quot;myCustomSerializer&amp;quot;)&#xD;
-public class MyJobConfigWithCustomSerializer {&#xD;
-&#xD;
-    @Bean&#xD;
-    public Job job(JobRepository jobRepository) {&#xD;
-        return new JobBuilder(&amp;quot;myJob&amp;quot;, jobRepository)&#xD;
-                //define job flow as needed&#xD;
-                .build();&#xD;
-    }&#xD;
-    &#xD;
-    @Bean&#xD;
-    public ExecutionContextSerializer myCustomSerializer() {&#xD;
-        Jackson2ExecutionContextStringSerializer serializer = new Jackson2ExecutionContextStringSerializer();&#xD;
-        // customize serializer&#xD;
-        return serializer;&#xD;
-    }&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We believe this new way of configuring Spring Batch is more intuitive, more straightforward, and less prone to errors.&lt;/p&gt;&lt;h3&gt;&lt;a href="#new-configuration-class-for-infrastructure-beans" class="anchor" name="new-configuration-class-for-infrastructure-beans"&gt;&lt;/a&gt;New Configuration Class for Infrastructure Beans&lt;/h3&gt;
-&lt;p&gt;In this release, you can use a new configuration class, named &lt;code&gt;DefaultBatchConfiguration&lt;/code&gt;, as an alternative to using &lt;code&gt;@EnableBatchProcessing&lt;/code&gt; for the configuration of infrastructure beans. This class provides infrastructure beans with default configuration, which you can customize as needed. The following snippet shows a typical usage of this class:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;@Configuration&#xD;
-class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
-&#xD;
-	@Bean&#xD;
-	public Job job(JobRepository jobRepository) {&#xD;
-		return new JobBuilder(&amp;quot;myJob&amp;quot;, jobRepository)&#xD;
-				//define job flow as needed&#xD;
-				.build();&#xD;
-	}&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In this example, the &lt;code&gt;JobRepository&lt;/code&gt; bean injected in the &lt;code&gt;Job&lt;/code&gt; bean definition is defined in the &lt;code&gt;DefaultBatchConfiguration&lt;/code&gt; class. You can specify custom parameters by overriding the corresponding getter. For example, the following example shows how to override the default character encoding used in the job repository and job explorer:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;@Configuration&#xD;
-class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
-&#xD;
-	@Bean&#xD;
-	public Job job(JobRepository jobRepository) {&#xD;
-		return new JobBuilder(&amp;quot;job&amp;quot;, jobRepository)&#xD;
-				// define job flow as needed&#xD;
-				.build();&#xD;
-	}&#xD;
-&#xD;
-	@Override&#xD;
-	protected Charset getCharset() {&#xD;
-		return StandardCharsets.ISO_8859_1;&#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#transaction-support-in-jobexplorer-and-joboperator" class="anchor" name="transaction-support-in-jobexplorer-and-joboperator"&gt;&lt;/a&gt;Transaction Support in JobExplorer and JobOperator&lt;/h3&gt;
-&lt;p&gt;This release introduces transaction support in the &lt;code&gt;JobExplorer&lt;/code&gt; created through the &lt;code&gt;JobExplorerFactoryBean&lt;/code&gt;. You can now specify which transaction manager to use to drive the ready-only transactions when querying Batch meta-data. Also, you can now customize the transaction attributes. The same transaction support was added to the &lt;code&gt;JobOperator&lt;/code&gt; through a new factory bean, named &lt;code&gt;JobOperatorFactoryBean&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#automatic-registration-of-a-joboperator-with-enablebatchprocessing" class="anchor" name="automatic-registration-of-a-joboperator-with-enablebatchprocessing"&gt;&lt;/a&gt;Automatic registration of a JobOperator with EnableBatchProcessing&lt;/h3&gt;
-&lt;p&gt;As of version 4, the &lt;code&gt;EnableBatchProcessing&lt;/code&gt; annotation provided all the basic infrastructure beans that are required to launch Spring Batch jobs. However, it did not register a job operator bean, which is the main entry point to stop, restart and abandon job executions.&lt;/p&gt;
-&lt;p&gt;While these utilities are not used as often as launching jobs, adding a job operator automatically in the application context can be useful to avoid a manual configuration of such a bean by end users.&lt;/p&gt;&lt;h3&gt;&lt;a href="#test-utilities-configuration-updates" class="anchor" name="test-utilities-configuration-updates"&gt;&lt;/a&gt;Test utilities configuration updates&lt;/h3&gt;
-&lt;p&gt;Up to version 4.3, the &lt;code&gt;JobLauncherTestUtils&lt;/code&gt; used to autowire the job under test with the goal of facilitating the test setup. But what if multiple jobs are defined in the test context? And what if no &lt;code&gt;Job&lt;/code&gt; beans are defined at all? So while this autowiring was convenient for most cases, it turned out to cause several issues in the aforementioned situations. In this release, and based on community feedback, we have decided to remove the autowiring of any job in &lt;code&gt;JobLauncherTestUtils&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Similarly, the &lt;code&gt;JobRepositoryTestUtils&lt;/code&gt; used to autowire a &lt;code&gt;DataSource&lt;/code&gt; from the application context. Again, what if no data source or multiple data sources are defined in the test context? In this version, the &lt;code&gt;JobRepositoryTestUtils&lt;/code&gt; was updated to work against the &lt;code&gt;JobRepository&lt;/code&gt; interface, without having to deal with any implementation details of the repository (such as a data source, for example).&lt;/p&gt;
-&lt;p&gt;If you define those utility beans manually in your test context or import them through &lt;code&gt;@SpringBatchTest&lt;/code&gt;, you would manually set the job under test or the test data source when multiple beans of those types are defined in your test context.&lt;/p&gt;&lt;h3&gt;&lt;a href="#migration-to-junit-jupiter" class="anchor" name="migration-to-junit-jupiter"&gt;&lt;/a&gt;Migration to JUnit Jupiter&lt;/h3&gt;
-&lt;p&gt;In this release, the entire test suite of Spring Batch was migrated to JUnit 5. While this does not impact end users directly, it helps the Batch team as well as community contributors to use the next generation of JUnit to write better tests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#java-records-support-improvement" class="anchor" name="java-records-support-improvement"&gt;&lt;/a&gt;Java Records Support Improvement&lt;/h3&gt;
-&lt;p&gt;The support for Java records as items in a chunk-oriented step was initially introduced in v4.3, but that support was limited, due to the fact that v4 has Java 8 as a baseline. In Java 8, records were not even in preview yet. That initial support was based on reflection tricks to create Java records and populate them with data, without having access to the &lt;code&gt;java.lang.Record&lt;/code&gt; API, which was finalized in Java 16.&lt;/p&gt;
-&lt;p&gt;Now that v5 has Java 17 as a baseline, we have improved records support in Spring Batch by leveraging the &lt;code&gt;java.lang.Record&lt;/code&gt; API in different parts of the framework. For example, the &lt;code&gt;FlatFileItemReaderBuilder&lt;/code&gt; is now able to detect if the item type is a record or a regular class and configure the corresponding &lt;code&gt;FieldSetMapper&lt;/code&gt; implementation accordingly (&lt;code&gt;RecordFieldSetMapper&lt;/code&gt; for records and &lt;code&gt;BeanWrapperFieldSetMapper&lt;/code&gt; for regular classes). The goal here is to make the configuration of the required &lt;code&gt;FieldSetMapper&lt;/code&gt; type &lt;em&gt;transparent&lt;/em&gt; to the user. The same feature has also been implemented in the &lt;code&gt;FlatFileItemWriterBuilder&lt;/code&gt;, in order to configure either a &lt;code&gt;RecordFieldExtractor&lt;/code&gt; or a &lt;code&gt;BeanWrapperFieldExtractor&lt;/code&gt; based on the item type.&lt;/p&gt;&lt;h3&gt;&lt;a href="#utf-8-by-default" class="anchor" name="utf-8-by-default"&gt;&lt;/a&gt;UTF-8 by default&lt;/h3&gt;
-&lt;p&gt;Several issues related to character encoding have been reported over the years in different areas of the framework, such as inconsistent default encoding between file-based item readers and writers, serialization/deserialization issues when dealing with multi-byte characters in the execution context, and others.&lt;/p&gt;
-&lt;p&gt;In the same spirit as &lt;a href="https://openjdk.java.net/jeps/400"&gt;JEP 400&lt;/a&gt; and following the &lt;a href="http://utf8everywhere.org"&gt;UTF-8 manifesto&lt;/a&gt;, we have changed the default encoding to &lt;code&gt;UTF-8&lt;/code&gt; in all areas of the framework and made this default configurable where appropriate.&lt;/p&gt;&lt;h3&gt;&lt;a href="#java-8-features-updates" class="anchor" name="java-8-features-updates"&gt;&lt;/a&gt;Java 8 features updates&lt;/h3&gt;
-&lt;p&gt;We took the opportunity of this major release to improve the code base with features from Java 8+, for example:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Use default methods in interfaces and deprecate &amp;ldquo;support&amp;rdquo; classes (see &lt;a href="https://github.com/spring-projects/spring-batch/issues/3924"&gt;issue 3924&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;@FunctionalInterface&lt;/code&gt; where appropriate in public APIs (see &lt;a href="https://github.com/spring-projects/spring-batch/issues/4107"&gt;issue 4107&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Add support to use types from the Date and Time APIs as job parameters. (see &lt;a href="https://github.com/spring-projects/spring-batch/issues/1035"&gt;issue 1035&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#new-maven-bill-of-materials" class="anchor" name="new-maven-bill-of-materials"&gt;&lt;/a&gt;New Maven Bill of Materials&lt;/h3&gt;
-&lt;p&gt;This feature has been requested several times and is finally shipped in this release. It is now possible to use the newly added Maven BOM to import Spring Batch modules with a consistent version number.&lt;/p&gt;&lt;h3&gt;&lt;a href="#full-mariadb-support" class="anchor" name="full-mariadb-support"&gt;&lt;/a&gt;Full MariaDB support&lt;/h3&gt;
-&lt;p&gt;Up until v4.3, Spring Batch provided support for MariaDB by considering it as MySQL. In this release, MariaDB is now treated as a separate database product with its own DDL script and &lt;code&gt;DataFieldMaxValueIncrementer&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#support-for-sap-hana-as-a-job-repository" class="anchor" name="support-for-sap-hana-as-a-job-repository"&gt;&lt;/a&gt;Support for SAP HANA as a job repository&lt;/h3&gt;
-&lt;p&gt;SAP Hana is now officially supported as a job repository in Spring Batch.&lt;/p&gt;&lt;h3&gt;&lt;a href="#improved-documentation" class="anchor" name="improved-documentation"&gt;&lt;/a&gt;Improved documentation&lt;/h3&gt;
-&lt;p&gt;In this release, the documentation was updated to use the &lt;a href="https://github.com/spring-io/spring-asciidoctor-backends"&gt;Spring Asciidoctor Backend&lt;/a&gt;. This backend ensures that all projects from the portfolio follow the same documentation style. For consistency with other projects, the reference documentation of Spring Batch was updated to use this backend in this release. You can check the new version of the reference documentation &lt;a href="https://docs.spring.io/spring-batch/docs/5.0.0/reference/html/"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-deprecated-or-removed" class="anchor" name="what-rsquo-s-deprecated-or-removed"&gt;&lt;/a&gt;What&amp;rsquo;s deprecated or removed?&lt;/h2&gt;
-&lt;p&gt;In this major release, all APIs that were deprecated in previous versions have been removed. Moreover, some APIs have been deprecated in v5.0 and are scheduled for removal in v5.2. Finally, some APIs have been moved or removed without deprecation for practical reasons. For a list of all deprecated APIs, please refer to the &lt;a href="https://github.com/spring-projects/spring-batch/wiki/Spring-Batch-5.0-Migration-Guide#deprecated-apis"&gt;migration guide&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#sqlfire-support-removal" class="anchor" name="sqlfire-support-removal"&gt;&lt;/a&gt;SQLFire Support Removal&lt;/h3&gt;
-&lt;p&gt;SqlFire has been announced to be EOL as of November 1st, 2014. The support of SQLFire as a job repository was deprecated in version v4.3 and removed in version v5.0.&lt;/p&gt;&lt;h3&gt;&lt;a href="#gemfire-support-removal" class="anchor" name="gemfire-support-removal"&gt;&lt;/a&gt;GemFire support removal&lt;/h3&gt;
-&lt;p&gt;Based on the &lt;a href="https://github.com/spring-projects/spring-data-geode#notice"&gt;decision to discontinue&lt;/a&gt; the support of Spring Data for Apache Geode, the support for Apache Geode in Spring Batch was removed.&lt;/p&gt;
-&lt;p&gt;The code was moved to the &lt;a href="https://github.com/spring-projects/spring-batch-extensions"&gt;spring-batch-extensions&lt;/a&gt; repository as a community-driven effort.&lt;/p&gt;&lt;h3&gt;&lt;a href="#jsr-352-implementation-removal" class="anchor" name="jsr-352-implementation-removal"&gt;&lt;/a&gt;JSR-352 Implementation Removal&lt;/h3&gt;
-&lt;p&gt;Due to a lack of adoption, the implementation of JSR-352 has been discontinued in this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-been-fixed" class="anchor" name="what-rsquo-s-been-fixed"&gt;&lt;/a&gt;What&amp;rsquo;s been fixed?&lt;/h2&gt;
-&lt;p&gt;Some bugs cannot be fixed without introducing breaking changes. We take the opportunity of this major release to fix such bugs. Please refer to the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/5.0.0"&gt;release notes&lt;/a&gt; for the complete list of 40+ bugs that were fixed in this release!&lt;/p&gt;&lt;h2&gt;&lt;a href="#feedback-and-contributions" class="anchor" name="feedback-and-contributions"&gt;&lt;/a&gt;Feedback and contributions&lt;/h2&gt;
-&lt;p&gt;I would like to thank ALL contributors who had a role in this huge release! This release would not have been possible without the help of the amazing Spring community in general and the Spring Batch community in particular. We would be happy to hear your feedback on this major release and how it could improve your batch infrastructure. Please submit your feedback on &lt;a href="https://github.com/spring-projects/spring-batch/issues"&gt;Github&lt;/a&gt;, &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt; and &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-next" class="anchor" name="what-rsquo-s-next"&gt;&lt;/a&gt;What&amp;rsquo;s next?&lt;/h2&gt;
-&lt;p&gt;As we have just released the first version of the next generation of Spring Batch, we still have a ton of ideas and features that we are working on or planning to work on for the next version, like:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A new implementation of the chunk-oriented processing model&lt;/li&gt;
-  &lt;li&gt;A new concurrency model based on Java 19&amp;rsquo;s virtual threads&lt;/li&gt;
-  &lt;li&gt;A new job repository implementation based on MongoDB&lt;/li&gt;
-  &lt;li&gt;And more!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We will share with you our complete roadmap in the near future and show you how you can participate in the early phases of development and testing of these new features. Stay tuned!&lt;/p&gt;
-&lt;hr/&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt;|&lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on Github&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-batch/docs/5.0.0/reference/html/index.html"&gt;Reference documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 6.0.1 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/23/spring-framework-6-0-1-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2022-11-23:5014</id>
-    <updated>2022-11-23T10:50:08Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;6.0.1&lt;/code&gt; is available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;6.0.1&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v6.0.1"&gt;21 fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.1/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.1.0 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/23/spring-for-graphql-1-1-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2022-11-22:5013</id>
-    <updated>2022-11-23T09:37:00Z</updated>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce that Spring for GraphQL 1.1.0 is now available on Maven Central. This version will ship with Spring Boot 3.0.0 later this week.&lt;/p&gt;
-&lt;p&gt;Spring for GraphQL 1.0.0 was released 6 months ago, so why a new minor version now? The team initially planned a 1.1.0 release with one goal in mind: support Spring Framework 6.0 / Spring Boot 3.0 and adapt to the new baseline for that generation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Java 17&lt;/li&gt;
-  &lt;li&gt;Jakarta EE 9&lt;/li&gt;
-  &lt;li&gt;GraphQL Java 19&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In addition, we shipped some new and noteworthy features we think you&amp;rsquo;ll like:&lt;/p&gt;&lt;h2&gt;&lt;a href="#observability" class="anchor" name="observability"&gt;&lt;/a&gt;Observability&lt;/h2&gt;
-&lt;p&gt;Observability is a major theme across the Spring portfolio in this major new Spring Framework 6 generation. Spring projects now have their own, built-in instrumentation for metrics and traces based on the &lt;a href="https://spring.io/blog/2022/10/12/observability-with-spring-boot-3"&gt;new Observation API&lt;/a&gt; from Micrometer. This new instrumentation in Spring for GraphQL replaces &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.metrics.supported.spring-graphql"&gt;the former GraphQL Metrics support&lt;/a&gt; in Spring Boot 2.7. This is important to keep track of performance metrics for your GraphQL API, as well as to to explore traces and investigate production issues. GraphQL is a good use case for Observability in general, as the GraphQL engine can fan out data fetching across REST APIs, data stores, caches, and more. &lt;/p&gt;&lt;h2&gt;&lt;a href="#context-propagation" class="anchor" name="context-propagation"&gt;&lt;/a&gt;Context Propagation&lt;/h2&gt;
-&lt;p&gt;Observability depends on transparent context propagation. This is particularly important for GraphQL applications where a request may start in an HTTP handler, and result in calls to many &lt;code&gt;DataFetcher&lt;/code&gt; components, each of which can be asynchronous, and also reactive in Spring for GraphQL. &lt;/p&gt;
-&lt;p&gt;In version 1.0, we provided the &lt;code&gt;ThreadLocalAccessor&lt;/code&gt; contract to allow applications to hook any &lt;code&gt;ThreadLocal&lt;/code&gt; into context propagation. For version 1.1, we collaborated with the Micrometer and the Reactor teams to extract a separate library, and this is what lead to the &lt;a href="https://github.com/micrometer-metrics/context-propagation#context-propagation-library"&gt;Micrometer Context Propagation Library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In version 1.1, context propagation is based on this new library. It should work just the same, but your &lt;code&gt;ThreadLocalAccessor&lt;/code&gt; implementations will need to be switched to the contract from the new library. There are benefits too. The new library provides a more transparent and more flexible mechanism, as well as a dedicated public API to register accessors, to take snapshots, to restore context, and so on, all of which increases its usability and provides more control to applications. &lt;/p&gt;
-&lt;p&gt;As one example of where the new library brings something new, a &lt;code&gt;ThreadLocal&lt;/code&gt; value from the HTTP layer (e.g. Spring MVC) will now appear as a name-value pair in the &lt;code&gt;GraphQLContext&lt;/code&gt; that&amp;rsquo;s exposed to &lt;code&gt;DataFetcher&lt;/code&gt; components, and therefore a controller method can access that via &lt;code&gt;@ContextValue&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#aot-and-graalvm-native-images" class="anchor" name="aot-and-graalvm-native-images"&gt;&lt;/a&gt;AOT and GraalVM Native Images&lt;/h2&gt;
-&lt;p&gt;Spring Framework 6 and Spring Boot 3.0 introduce support for building memory-efficient and fast, operating system- and architecture-specific, native binaries with GraalVM&amp;rsquo;s native image compiler. To enable this for Spring for GraphQL applications, first we collaborated with the GraphQL Java team to &lt;a href="https://github.com/oracle/graalvm-reachability-metadata/pull/102"&gt;contribute GraphQL Java metadata&lt;/a&gt; to the GraalVM Reachability Metadata Repository, which benefits the entire Java community, not just Spring applications. This covers GraphQL Java itself, but the GraphQL Java engine also needs to perform reflection on application Java types that map to the schema. To accommodate this, we&amp;rsquo;ve also created a dedicated AOT processor that inspects your GraphQL controllers at build time, and makes the necessary registrations.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;d like to give this a try, please start with the &lt;a href="https://docs.spring.io/spring-boot/docs/3.0.0-SNAPSHOT/reference/html/native-image.html#native-image"&gt;Spring Boot reference documentation on Native Images&lt;/a&gt;, and follow the latest updates &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-GraalVM"&gt;on the Spring Boot wiki&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#argument-binding" class="anchor" name="argument-binding"&gt;&lt;/a&gt;Argument Binding&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve had plenty of great feedback related to argument binding. There are some limitations from the way we used Spring Framework&amp;rsquo;s &lt;code&gt;DataBinder&lt;/code&gt; to bind from the GraphQL arguments map to &lt;code&gt;@Argument&lt;/code&gt; method parameters. This included specific scenarios with non-ordered collection types, generics, and others on the target objects.&lt;/p&gt;
-&lt;p&gt;Furthermore, a major requirement was to support GraphQL nullability which differentiates between an input argument that is explicitly set to &lt;code&gt;null&lt;/code&gt; vs omitted entirely. This is commonly used to support partial updates. However, with argument binding to higher level objects, a mere &lt;code&gt;null&lt;/code&gt; property in the resulting object graph does not help to differentiate whether the value was set to &lt;code&gt;null&lt;/code&gt; by the client or was not provided at all.&lt;/p&gt;
-&lt;p&gt;In version 1.1, we have introduced the following changes to &lt;code&gt;GraphQlArgumentBinder&lt;/code&gt; that unlocks more possibilities:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;binding to all types of Collections (&lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Map&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;not requiring constructor binding for advanced cases&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-graphql/docs/current-SNAPSHOT/reference/html/#controllers-schema-mapping-argument-value"&gt;new &lt;code&gt;ArgumentValue&lt;/code&gt; wrapper type&lt;/a&gt; that exposes information about whether the argument was omitted entirely&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For 1.1, we did not have time to properly tackle important features like &lt;a href="https://github.com/spring-projects/spring-graphql/issues/103"&gt;Pagination/Relay&lt;/a&gt;, but we&amp;rsquo;re listening to the community. We&amp;rsquo;re working on our roadmap for the next feature version, so now is the time to vote on existing issues to show your interest!&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.1.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: the road to Spring Framework 6: the new Ahead-of-Time Compilation Engine and GraalVM</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/23/spring-tips-the-road-to-spring-framework-6-the-new-ahead-of-time-compilation-engine-and-graalvm" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5001</id>
-    <updated>2022-11-23T08:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Spring Boot 3 is here (or will be tomorrow, on the &lt;strong&gt;24th of November, 2022&lt;/strong&gt;, to be more precise!), bringing a fantastic new Ahead-of-Time (AOT) compilation engine that supports GraalVM native images. Join me, and we&amp;rsquo;ll dive deep into the engine and its interactions with the Spring component model. &lt;/p&gt;
-&lt;p&gt;This video is a detailed masterclass on the new AOT engine. It starts by examining the everyday usecases of an application developer and delves deeper and deeper into the engine, treating concerns that library and framework developers will care about. &lt;/p&gt;
-&lt;p&gt;Enjoy! &lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TOfYlLjXufw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Also, Happy thanksgiving (if you celebrate) from us to you!&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
