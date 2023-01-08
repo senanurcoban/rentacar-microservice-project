@@ -14,7 +14,7 @@
 	<name>filterService</name>
 	<description>filter service</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
 	</properties>
 	<dependencies>

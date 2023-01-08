@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\microservices2\\.git;
-GitRepositoriesView.GitDirectories.relative=C\:\\microservices2\\.git;
+GitRepositoriesView.GitDirectories=C\:\\microservice\\rentacar-microservice-project\\.git;C\:\\microservices2\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\microservice\\rentacar-microservice-project\\.git;C\:\\microservices2\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
