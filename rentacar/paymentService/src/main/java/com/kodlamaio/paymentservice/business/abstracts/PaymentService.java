@@ -1,14 +1,14 @@
 package com.kodlamaio.paymentservice.business.abstracts;
 
-import com.kodlamaio.common.rentalPayment.PayMoneyRequest;
-import com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse;
+
+import com.kodlamaio.common.requests.CreatePaymentRequest;
 
 public interface PaymentService {
-
+	void add(CreatePaymentRequest createPaymentRequest);
+	void delete(String id);
+	void updateStatus(String id, int status);
 	
-	CreatePaymentResponse add(PayMoneyRequest createPaymentRequest);
-	CreatePaymentResponse delete(String id);
-	//CreatePaymentResponse updateStatus(String id, int status);
+	
 	
 }
 

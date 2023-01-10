@@ -1,16 +1,9 @@
 package com.kodlamaio.paymentservice.api;
 
-import javax.validation.Valid;
-
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kodlamaio.common.rentalPayment.PayMoneyRequest;
 import com.kodlamaio.paymentservice.business.abstracts.PaymentService;
-import com.kodlamaio.paymentservice.business.requests.CreatePaymentRequest;
-import com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse;
 
 import lombok.AllArgsConstructor;
 
@@ -19,14 +12,15 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class PaymentsController {
 
-private PaymentService paymentService;
+     private PaymentService paymentService;
+
+/*@PostMapping
+public void add(@Valid @RequestBody CreatePaymentRequest createPaymentRequest) {
+	paymentService.add(createPaymentRequest);
+}*/
 	
 	
-	
-@PostMapping()
-public CreatePaymentResponse add (@Valid @RequestBody PayMoneyRequest createPaymentRequest) {
-	return paymentService.add(createPaymentRequest);
-}
+
 	
 	
 }
