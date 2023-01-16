@@ -3,8 +3,8 @@ package com.kodlamaio.common.utilities.mapping;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.stereotype.Service;
-
 import lombok.AllArgsConstructor;
+
 @AllArgsConstructor
 @Service
 public class ModelMapperManager implements ModelMapperService{
