@@ -1,6 +1,4 @@
 package com.kodlamaio.paymentservice.business.abstracts;
-
-
 import com.kodlamaio.common.requests.CreatePaymentRequest;
 
 public interface PaymentService {

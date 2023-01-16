@@ -1,7 +1,4 @@
 package com.kodlamaio.InventoryService.business.responses.get;
-
-
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

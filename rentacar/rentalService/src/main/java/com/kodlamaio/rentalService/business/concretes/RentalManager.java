@@ -4,9 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
-
 import org.springframework.stereotype.Service;
-
 import com.kodlamaio.common.events.rental.RentalCreatedEvent;
 import com.kodlamaio.common.events.rental.RentalUpdatedEvent;
 import com.kodlamaio.common.requests.CreatePaymentRequest;
@@ -24,8 +22,8 @@ import com.kodlamaio.rentalService.client.CarClient;
 import com.kodlamaio.rentalService.dataAccess.RentalRepository;
 import com.kodlamaio.rentalService.entities.Rental;
 import com.kodlamaio.rentalService.kafka.RentalProducer;
-
 import lombok.AllArgsConstructor;
+
 @Service
 @AllArgsConstructor
 public class RentalManager implements RentalService {

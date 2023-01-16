@@ -1,11 +1,8 @@
 package com.kodlamaio.filterservice.business.concretes;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import org.springframework.stereotype.Service;
-
 import com.kodlamaio.common.events.inventory.brand.BrandUpdatedEvent;
 import com.kodlamaio.common.events.inventory.car.CarCreatedEvent;
 import com.kodlamaio.common.events.inventory.car.CarDeletedEvent;
@@ -17,7 +14,6 @@ import com.kodlamaio.filterservice.business.response.get.GetAllFiltersResponse;
 import com.kodlamaio.filterservice.business.response.get.GetFilterResponse;
 import com.kodlamaio.filterservice.dataAccess.FilterRepository;
 import com.kodlamaio.filterservice.entities.Filter;
-
 import lombok.AllArgsConstructor;
 
 @Service

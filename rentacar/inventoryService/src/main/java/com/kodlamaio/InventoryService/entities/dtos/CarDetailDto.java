@@ -1,11 +1,8 @@
 package com.kodlamaio.InventoryService.entities.dtos;
-
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

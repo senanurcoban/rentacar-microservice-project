@@ -1,14 +1,11 @@
 package com.kodlamaio.rentalService.api;
 
 import javax.validation.Valid;
-
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import com.kodlamaio.common.requests.CreatePaymentRequest;
-
 import feign.Headers;
 
 @FeignClient(value = "paymentApi", url = "http://localhost:9011/payment/api/payments/")

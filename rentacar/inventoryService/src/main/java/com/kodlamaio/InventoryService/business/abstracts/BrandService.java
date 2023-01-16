@@ -1,7 +1,5 @@
 package com.kodlamaio.InventoryService.business.abstracts;
-
 import java.util.List;
-
 import com.kodlamaio.InventoryService.business.requests.create.CreateBrandRequest;
 import com.kodlamaio.InventoryService.business.requests.update.UpdateBrandRequest;
 import com.kodlamaio.InventoryService.business.responses.create.CreateBrandResponse;

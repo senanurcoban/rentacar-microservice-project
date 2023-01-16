@@ -1,5 +1,4 @@
 package com.kodlamaio.InventoryService.dataAccess;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.kodlamaio.InventoryService.entities.Model;
 

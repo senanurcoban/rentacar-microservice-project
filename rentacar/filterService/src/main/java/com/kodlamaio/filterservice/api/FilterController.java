@@ -1,16 +1,12 @@
 package com.kodlamaio.filterservice.api;
-
 import java.util.List;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import com.kodlamaio.filterservice.business.response.get.GetAllFiltersResponse;
 import com.kodlamaio.filterservice.business.response.get.GetFilterResponse;
-
 import lombok.AllArgsConstructor;
 
 @RestController

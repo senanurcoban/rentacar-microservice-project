@@ -1,7 +1,6 @@
 package com.kodlamaio.rentalService.business.abstracts;
 
 import java.util.List;
-
 import com.kodlamaio.common.requests.CreatePaymentRequest;
 import com.kodlamaio.rentalService.business.requests.CreateRentalRequest;
 import com.kodlamaio.rentalService.business.requests.UpdateRentalRequest;

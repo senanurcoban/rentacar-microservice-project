@@ -1,7 +1,5 @@
 package com.kodlamaio.InventoryService.business.responses.get;
-
 import com.kodlamaio.InventoryService.entities.Brand;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

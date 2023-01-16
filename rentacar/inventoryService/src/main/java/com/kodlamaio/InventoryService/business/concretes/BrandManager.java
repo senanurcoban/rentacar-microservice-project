@@ -1,11 +1,8 @@
 package com.kodlamaio.InventoryService.business.concretes;
-
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
-
 import org.springframework.stereotype.Service;
-
 import com.kodlamaio.InventoryService.business.abstracts.BrandService;
 import com.kodlamaio.InventoryService.business.requests.create.CreateBrandRequest;
 import com.kodlamaio.InventoryService.business.requests.update.UpdateBrandRequest;
@@ -17,8 +14,8 @@ import com.kodlamaio.InventoryService.dataAccess.BrandRepository;
 import com.kodlamaio.InventoryService.entities.Brand;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
-
 import lombok.AllArgsConstructor;
+
 @AllArgsConstructor
 @Service
 public class BrandManager implements BrandService{

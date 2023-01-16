@@ -1,17 +1,14 @@
 package com.kodlamaio.filterservice.kafka;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
-
 import com.kodlamaio.common.events.inventory.brand.BrandUpdatedEvent;
 import com.kodlamaio.common.events.inventory.car.CarCreatedEvent;
 import com.kodlamaio.common.events.inventory.car.CarDeletedEvent;
 import com.kodlamaio.common.events.inventory.car.CarUpdatedEvent;
 import com.kodlamaio.common.events.inventory.model.ModelUpdatedEvent;
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
-
 import lombok.AllArgsConstructor;
 
 @Service

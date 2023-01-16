@@ -1,7 +1,5 @@
 package com.kodlamaio.invoiceservice.business.abstracts;
-
 import java.util.List;
-
 import com.kodlamaio.invoiceservice.business.requests.CreateInvoiceRequest;
 import com.kodlamaio.invoiceservice.business.requests.UpdateInvoiceRequest;
 import com.kodlamaio.invoiceservice.business.response.CreateInvoiceResponse;

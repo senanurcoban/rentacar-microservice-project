@@ -1,9 +1,6 @@
 package com.kodlamaio.filterservice.dataAccess;
-
 import java.util.List;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
-
 import com.kodlamaio.filterservice.entities.Filter;
 
 public interface FilterRepository extends MongoRepository<Filter, String> {
