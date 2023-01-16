@@ -1,4 +1,5 @@
 package com.kodlamaio.invoiceservice.business.requests;
+
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
