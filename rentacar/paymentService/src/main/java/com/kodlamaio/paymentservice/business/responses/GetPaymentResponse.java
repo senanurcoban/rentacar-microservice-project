@@ -11,16 +11,10 @@ import lombok.NoArgsConstructor;
 public class GetPaymentResponse {
 
 	    private String id;
-		
 		private String cardNo;
-		
 		private String cardHolder;
-
 		private int cvv;
-		
 		private LocalDate cardDate;
-
 		private double balance;
-		
 		private int status;
 }
