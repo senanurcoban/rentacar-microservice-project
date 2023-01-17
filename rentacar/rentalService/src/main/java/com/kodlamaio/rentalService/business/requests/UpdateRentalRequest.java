@@ -12,11 +12,14 @@ import lombok.NoArgsConstructor;
 public class UpdateRentalRequest {
 	@NotNull
 	private String id;
+	
 	@NotNull
 	private String carId;
+	
 	@NotNull
 	@Min(value = 1)
 	private int rentedForDays;
+	
 	@NotNull
 	@Min(0)
 	private double dailyPrice;
