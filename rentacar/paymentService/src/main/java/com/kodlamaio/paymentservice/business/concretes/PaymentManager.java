@@ -10,8 +10,8 @@ import com.kodlamaio.paymentservice.business.adapters.PosCheckService;
 import com.kodlamaio.paymentservice.dataAccess.PaymentRepository;
 import com.kodlamaio.paymentservice.entities.Payment;
 import com.kodlamaio.paymentservice.kafka.PaymentProducer;
-
 import lombok.AllArgsConstructor;
+
 @Service
 @AllArgsConstructor
 public class PaymentManager implements PaymentService{
