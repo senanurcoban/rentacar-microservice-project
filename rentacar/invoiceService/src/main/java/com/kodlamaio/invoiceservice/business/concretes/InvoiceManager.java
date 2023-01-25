@@ -62,8 +62,12 @@ public class InvoiceManager implements InvoiceService {
 	}
 	@Override
 	public UpdateInvoiceResponse update(UpdateInvoiceRequest updateInvoiceRequest) {
-	
-		return null;
+		Invoice invoice = this.modelMapperService.forRequest().map(updateInvoiceRequest, Invoice.class);
+		invoice.setId(UUID.randomUUID().toString());
+		this.invoiceRepository.save(invoice);
+		UpdateInvoiceResponse invoiceResponse = this.modelMapperService.forResponse().map(invoice,
+				UpdateInvoiceResponse.class);
+		return invoiceResponse;
 	}
 	@Override
 	public GetInvoiceResponse getById(String id) {
