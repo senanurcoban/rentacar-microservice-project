@@ -1,4 +1,5 @@
 package com.kodlamaio.InventoryService.business.concretes;
+
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -45,13 +46,8 @@ public class BrandManager implements BrandService{
 		return createBrandResponse;
 		
 	}
-	private void checkIfBrandExistsByName(String name) {
-		Brand brand = this.brandRepository.findByName(name);
-		if(brand!=null) {
-		    throw new BusinessException("BRAND.EXISTS");
-	}
 
-}
+
 
 	@Override
 	public UpdateBrandResponse update(UpdateBrandRequest updateBrandRequest) {
@@ -86,16 +82,13 @@ public class BrandManager implements BrandService{
     	}
     }
 
-	@Override
-	public void checkIfBrandExistsByBrandId(String id) {
-		Object result = this.brandRepository.findById(id).orElse(null);
-		if (result == null) {
-			throw new BusinessException("BRAND.NO.EXISTS");
-		}
-		
+    private void checkIfBrandExistsByName(String name) {
+		Brand brand = this.brandRepository.findByName(name);
+		if(brand!=null) {
+		    throw new BusinessException("BRAND.EXISTS");
 	}
    
     
     
-   
+    }  
 }

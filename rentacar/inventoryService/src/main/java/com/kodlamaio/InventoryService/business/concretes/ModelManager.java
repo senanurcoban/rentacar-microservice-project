@@ -1,4 +1,5 @@
 package com.kodlamaio.InventoryService.business.concretes;
+
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -37,7 +38,8 @@ public class ModelManager implements ModelService {
 	@Override
 	public CreateModelResponse add(CreateModelRequest createModelRequest) {
 		checkIfModelExistsByName(createModelRequest.getName());
-		this.brandService.checkIfBrandExistsByBrandId(createModelRequest.getBrandId());
+		checkIfBrandExistsByBrandId(createModelRequest.getBrandId());
+		//this.brandService.checkIfBrandExistsByBrandId(createModelRequest.getBrandId());
 		Model model = this.modelMapperService.forRequest().map(createModelRequest, Model.class);
 		model.setId(UUID.randomUUID().toString());
 		this.modelRepository.save(model);
@@ -54,8 +56,10 @@ public class ModelManager implements ModelService {
 	@Override
 	public UpdateModelResponse update(UpdateModelRequest updateModelRequest) {
 		checkIfModelExistsById(updateModelRequest.getId());
+		checkIfModelExistsByName(updateModelRequest.getName());
+		checkIfBrandExistsByBrandId(updateModelRequest.getBrandId());
 		//checkIfModelExistsByName(updateModelRequest.getName());
-		this.brandService.checkIfBrandExistsByBrandId(updateModelRequest.getBrandId());
+		//this.brandService.checkIfBrandExistsByBrandId(updateModelRequest.getBrandId());
 		 Model model = modelMapperService.forRequest().map(updateModelRequest,Model.class);
 		 modelRepository.save(model);
 		 UpdateModelResponse response=modelMapperService.forResponse().map(model,UpdateModelResponse.class);
@@ -97,5 +101,12 @@ public class ModelManager implements ModelService {
 	/*private void checkIfBrandExistsByBrandId(String id) {
 		brandService.getById(id);
 	}*/
+	
+	private void checkIfBrandExistsByBrandId(String brandId) {
+		var result = this.brandService.getById(brandId);
+		if (result == null) {
+			throw new BusinessException("BRAND.NO.EXISTS");
+		}
+	}
 	
 }

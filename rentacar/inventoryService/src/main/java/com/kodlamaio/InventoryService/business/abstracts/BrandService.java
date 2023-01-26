@@ -14,6 +14,6 @@ public interface BrandService {
 	UpdateBrandResponse update(UpdateBrandRequest updateBrandRequest);
 	GetBrandResponse getById(String id);
 	void delete(String id);
-	void checkIfBrandExistsByBrandId(String id);
+	
 	
 }

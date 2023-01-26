@@ -1,4 +1,5 @@
 package com.kodlamaio.InventoryService.entities;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
