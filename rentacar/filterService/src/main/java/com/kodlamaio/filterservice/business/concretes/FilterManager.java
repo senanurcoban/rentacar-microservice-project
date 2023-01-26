@@ -1,4 +1,5 @@
 package com.kodlamaio.filterservice.business.concretes;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

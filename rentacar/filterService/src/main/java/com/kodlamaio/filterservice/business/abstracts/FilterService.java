@@ -1,4 +1,5 @@
 package com.kodlamaio.filterservice.business.abstracts;
+
 import java.util.List;
 import com.kodlamaio.common.events.inventory.brand.BrandUpdatedEvent;
 import com.kodlamaio.common.events.inventory.car.CarCreatedEvent;

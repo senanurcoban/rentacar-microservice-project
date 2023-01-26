@@ -1,4 +1,5 @@
 package com.kodlamaio.filterservice.business.response.create;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
