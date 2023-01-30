@@ -195,7 +195,6 @@ INDEX VERSION 1.131+C:\microservice\rentacar-microservice-project\rentacar\.meta
 3425228988.index
 1762237877.index
 1442883457.index
-873215327.index
 3959137331.index
 4171625848.index
 567953629.index

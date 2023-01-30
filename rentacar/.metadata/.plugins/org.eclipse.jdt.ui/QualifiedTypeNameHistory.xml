@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.apache.kafka.clients.admin.NewTopic"/>
     <fullyQualifiedTypeName name="org.springframework.kafka.config.TopicBuilder"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
@@ -53,11 +52,12 @@
     <fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
     <fullyQualifiedTypeName name="javax.validation.constraints.NotBlank"/>
     <fullyQualifiedTypeName name="javax.validation.constraints.Min"/>
-    <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.results.Result"/>
     <fullyQualifiedTypeName name="com.kodlamaio.common.requests.CreatePaymentRequest"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.kodlamaio.paymentservice.business.adapters.PosCheckService"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.results.DataResult"/>
+    <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.results.Result"/>
 </qualifiedTypeNameHistroy>
